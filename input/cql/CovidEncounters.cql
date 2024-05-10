@@ -23,6 +23,7 @@ valueset "Telehealth Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1
 valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080'
 
 // Encounter.class codes
+// http://hl7.org/fhir/R4/v3/ActEncounterCode/vs.html
 code "ambulatory": 'AMB' from ActCode display 'ambulatory'
 code "emergency": 'EMER' from ActCode display 'emergency'
 code "field": 'FLD' from ActCode display 'field'
@@ -46,6 +47,27 @@ define ReportEncounters:
 }
 
 define "Outpatient Encounters":
+  [Encounter] enc
+    where enc.class ~ "ambulatory"
+
+define "Inpatient Encounters":
+  [Encounter] enc
+    where enc.class ~ "inpatient encounter"
+      or enc.class ~ "inpatient acute"
+      or enc.class ~ "inpatient non-acute"
+      or enc.class ~ "short stay"
+
+define "Emergency Department Encounters":
+  [Encounter] enc
+    where enc.class ~ "emergency"
+    
+define "All Encounters":
+  ["Encounter"]
+
+/*
+  These expressions are not currently used, where Encounter is filtered by Encounter.type
+*/
+define "Outpatient Encounters Using Type":
   ["Encounter": "Office Visit"]
     union ["Encounter": "Outpatient Consultation"]
     union ["Encounter": "Annual Wellness Visit"]
@@ -54,11 +76,8 @@ define "Outpatient Encounters":
     union ["Encounter": "Telehealth Services"]
     union ["Encounter": "Telephone Visits"]
 
-define "Inpatient Encounters":
+define "Inpatient Encounters Using Type":
   ["Encounter": "Encounter Inpatient"] InpatientEncounter
 
-define "Emergency Department Encounters":
+define "Emergency Department Encounters Using Type":
   ["Encounter": "Emergency Department Visit"]
-
-define "All Encounters":
-  ["Encounter"]
