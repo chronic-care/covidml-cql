@@ -23,8 +23,8 @@
   "date": "2021-09-20T01:00:57-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:15a2e539-77e2-417e-8dda-c18488973279",
-    "timestamp": "2024-02-17T12:31:03-05:00",
+    "identifier": "urn:uuid:8b10d010-0068-4821-a130-a2d8dc9511bf",
+    "timestamp": "2024-05-10T14:58:02-04:00",
     "total": 29,
     "offset": 0,
     "parameter": [ {
@@ -36,12 +36,12 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "169240004",
       "display": "Echocardiogram normal (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "169241000",
       "display": "Echocardiogram abnormal (finding)"
     }, {
@@ -106,22 +106,22 @@
       "display": "Left atrial Diameter anterior-posterior systole by US 2D"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "407596008",
       "display": "Echocardiogram shows left ventricular systolic dysfunction (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "407597004",
       "display": "Echocardiogram shows left ventricular diastolic dysfunction (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "408380008",
       "display": "Echocardiogram equivocal (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "414072005",
       "display": "Echocardiogram shows normal left ventricular function (finding)"
     }, {

@@ -22,8 +22,8 @@
   "date": "2023-07-20T01:01:20-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:43a161f7-fcc4-4ede-bc68-4f056910102c",
-    "timestamp": "2024-02-17T12:27:30-05:00",
+    "identifier": "urn:uuid:0a7a4ddd-5ba0-4292-9946-6aa320e55bef",
+    "timestamp": "2024-05-10T14:56:47-04:00",
     "total": 12,
     "offset": 0,
     "parameter": [ {
@@ -35,57 +35,57 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "1017214008",
       "display": "Viremia caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "1119302008",
       "display": "Acute disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "119751000146104",
       "display": "Fever caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "119981000146107",
       "display": "Dyspnea caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "1217296006",
       "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 following administration of vaccine product against severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "1240541000000107",
       "display": "Infection of upper respiratory tract caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "138389411000119105",
       "display": "Acute bronchitis caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "840539006",
       "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "880529761000119102",
       "display": "Infection of lower respiratory tract caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "882784691000119100",
       "display": "Pneumonia caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "894362851000119109",
       "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 during pregnancy (disorder)"
     }, {

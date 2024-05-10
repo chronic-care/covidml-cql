@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113762.1.4.1247.17",
   "meta": {
     "versionId": "6",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2024-04-24T13:26:52.000-04:00",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
   },
   "extension": [ {
@@ -23,8 +23,8 @@
   "date": "2021-11-13T01:06:55-05:00",
   "publisher": "The Gravity Project Steward",
   "expansion": {
-    "identifier": "urn:uuid:4671ae30-470c-40ed-b800-3a52bd4a6a14",
-    "timestamp": "2024-02-17T12:30:38-05:00",
+    "identifier": "urn:uuid:8e23bfa0-165c-4d8d-b16b-ffdd082c264d",
+    "timestamp": "2024-05-10T14:57:52-04:00",
     "total": 15,
     "offset": 0,
     "parameter": [ {
@@ -36,42 +36,42 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "1155680000",
       "display": "Limited access to nutrition supplies (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "129832003",
       "display": "Noncompliance with dietary regimen (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "445281000124101",
       "display": "Nutrition impaired due to limited access to healthful foods (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "470911000124109",
       "display": "Mild food insecurity on United States household food security survey module (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "470941000124108",
       "display": "Moderate food insecurity on United States household food security survey module (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "470951000124105",
       "display": "Severe food insecurity on United States household food security survey module (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "706875005",
       "display": "Insufficient food supply (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "733423003",
       "display": "Food insecurity (finding)"
     }, {

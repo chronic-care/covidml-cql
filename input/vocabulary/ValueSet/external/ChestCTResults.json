@@ -23,8 +23,8 @@
   "date": "2021-09-25T01:00:37-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:7c724a30-10d5-490e-9c67-4ecbfc3cbf8a",
-    "timestamp": "2024-02-17T12:30:58-05:00",
+    "identifier": "urn:uuid:8991fe27-3bd9-4f70-91f5-2e74c8fa310f",
+    "timestamp": "2024-05-10T14:58:00-04:00",
     "total": 21,
     "offset": 0,
     "parameter": [ {
@@ -36,7 +36,7 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "16900311000119102",
       "display": "Computed tomography of chest abnormal (finding)"
     }, {

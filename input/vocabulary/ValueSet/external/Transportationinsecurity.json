@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113762.1.4.1247.26",
   "meta": {
     "versionId": "14",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2024-05-01T13:29:42.000-04:00",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
   },
   "extension": [ {
@@ -23,8 +23,8 @@
   "date": "2022-10-28T01:03:05-04:00",
   "publisher": "The Gravity Project Steward",
   "expansion": {
-    "identifier": "urn:uuid:9fd5ee5b-2456-4c27-beed-8e2c1e0ef947",
-    "timestamp": "2024-02-17T12:30:53-05:00",
+    "identifier": "urn:uuid:90afa29a-ff27-4fda-8479-58023cb97d96",
+    "timestamp": "2024-05-10T14:57:54-04:00",
     "total": 16,
     "offset": 0,
     "parameter": [ {
@@ -36,72 +36,72 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "160695008",
       "display": "Transport too expensive (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "160696009",
       "display": "Transport distance too great (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "424629004",
       "display": "Transportation barrier impedes ability to use community resources (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551691000124106",
       "display": "Transportation insecurity (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551701000124106",
       "display": "Transportation insecurity due to unsafe transportation environment (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551711000124109",
       "display": "Transportation insecurity due to excessive travel time to destination (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551721000124101",
       "display": "Transportation insecurity due to no driver's license (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551731000124103",
       "display": "Inability to access health care due to transportation insecurity (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551741000124108",
       "display": "Transportation insecurity due to no access to vehicle (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551751000124105",
       "display": "Inability to access community resources due to transportation insecurity (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "551761000124107",
       "display": "Transportation insecurity due to unaffordable transportation (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "611151000124107",
       "display": "Transportation insecurity due to route not serviced by public transportation (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "611161000124109",
       "display": "Transportation insecurity limiting access to food (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "713458007",
       "display": "Lack of access to transportation (finding)"
     }, {

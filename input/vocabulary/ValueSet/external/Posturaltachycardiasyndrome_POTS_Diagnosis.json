@@ -23,9 +23,9 @@
   "date": "2022-06-08T01:03:01-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:7c54da4f-44ec-4eeb-aea0-a89db346ae9c",
-    "timestamp": "2024-02-17T12:30:09-05:00",
-    "total": 3,
+    "identifier": "urn:uuid:0d09e501-ceaf-4066-9aa2-e4384e11afc5",
+    "timestamp": "2024-05-10T14:57:46-04:00",
+    "total": 4,
     "offset": 0,
     "parameter": [ {
       "name": "count",
@@ -36,12 +36,17 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "1217211002",
       "display": "Postural orthostatic tachycardia syndrome due to norepinephrine transporter deficiency (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
+      "code": "1290892007",
+      "display": "Bier anemic spots, cyanosis, and urticaria-like eruption syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "371073003",
       "display": "Postural orthostatic tachycardia syndrome (disorder)"
     }, {

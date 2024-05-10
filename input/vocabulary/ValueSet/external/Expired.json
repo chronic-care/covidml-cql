@@ -23,8 +23,8 @@
   "date": "2014-06-30T01:00:02-04:00",
   "publisher": "Yale",
   "expansion": {
-    "identifier": "urn:uuid:f03bf9af-b02a-4c47-9c55-f5ff7d62f8ff",
-    "timestamp": "2024-02-17T12:29:23-05:00",
+    "identifier": "urn:uuid:cb74e795-ed20-4481-912b-5f223375f9bd",
+    "timestamp": "2024-05-10T14:57:41-04:00",
     "total": 8,
     "offset": 0,
     "parameter": [ {
@@ -36,17 +36,17 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "183676005",
       "display": "Died in hospital (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "419099009",
       "display": "Dead (finding)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "419620001",
       "display": "Death (event)"
     }, {

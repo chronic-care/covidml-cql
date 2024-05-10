@@ -23,8 +23,8 @@
   "date": "2021-09-15T01:00:53-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:3f37dc73-0f44-4e59-a0c5-2e4a78838f5e",
-    "timestamp": "2024-02-17T12:30:07-05:00",
+    "identifier": "urn:uuid:f38abe33-2bc0-4a2e-a762-cbef48b1d401",
+    "timestamp": "2024-05-10T14:57:46-04:00",
     "total": 10,
     "offset": 0,
     "parameter": [ {
@@ -36,12 +36,12 @@
     } ],
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "51771007",
       "display": "Postviral fatigue syndrome (disorder)"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "version": "http://snomed.info/sct/731000124108/version/20240301",
       "code": "52702003",
       "display": "Chronic fatigue syndrome (disorder)"
     }, {
