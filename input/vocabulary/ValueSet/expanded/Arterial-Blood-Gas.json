@@ -1,0 +1,184 @@
+{
+    "resourceType": "ValueSet",
+    "id": "Arterial-Blood-Gas",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueString": "executable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueString": "executable"
+        }
+    ],
+    "url": "http://emiadvisors.net/covidml/ValueSet/Arterial-Blood-Gas",
+    "version": "0.5.0",
+    "name": "Arterial-Blood-Gas",
+    "title": "Arterial Blood Gas",
+    "status": "active",
+    "date": "2024-05-09",
+    "publisher": "EMI Advisors",
+    "contact": [
+        {
+            "name": "EMI Advisors",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://www.emiadvisors.net/"
+                }
+            ]
+        }
+    ],
+    "description": "Includes LOINC codes for Arterial Blood Gas",
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "concept": [
+                    {
+                        "code": "24336-0"
+                    },
+                    {
+                        "code": "2744-1"
+                    },
+                    {
+                        "code": "33254-4"
+                    },
+                    {
+                        "code": "2019-8"
+                    },
+                    {
+                        "code": "32771-8"
+                    },
+                    {
+                        "code": "2703-7"
+                    },
+                    {
+                        "code": "19255-9"
+                    },
+                    {
+                        "code": "19218-7"
+                    },
+                    {
+                        "code": "1960-4"
+                    },
+                    {
+                        "code": "2026-3"
+                    },
+                    {
+                        "code": "1925-7"
+                    },
+                    {
+                        "code": "1922-4"
+                    },
+                    {
+                        "code": "2708-6"
+                    },
+                    {
+                        "code": "51733-4"
+                    },
+                    {
+                        "code": "30313-1"
+                    },
+                    {
+                        "code": "3150-0"
+                    },
+                    {
+                        "code": "3151-8"
+                    },
+                    {
+                        "code": "8310-5"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "timestamp": "2024-05-15T13:19:31-06:00",
+        "parameter": [
+            {
+                "name": "naive",
+                "valueBoolean": true
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://loinc.org",
+                "code": "24336-0"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "2744-1"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "33254-4"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "2019-8"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "32771-8"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "2703-7"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "19255-9"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "19218-7"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "1960-4"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "2026-3"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "1925-7"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "1922-4"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "2708-6"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "51733-4"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "30313-1"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "3150-0"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "3151-8"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "8310-5"
+            }
+        ]
+    }
+}
