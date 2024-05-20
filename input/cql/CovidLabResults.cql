@@ -17,6 +17,8 @@ define ReportLabResultsQA:
   // "Prediabetes HbA1c Tests": Count("Prediabetes HbA1c Tests"),
   "Hemoglobin A1C": Count("Hemoglobin A1C"),
   "Estimated Glomerular Filtration Rate": Count("Estimated Glomerular Filtration Rate"),
+  "Arterial Blood Gas": Count("Arterial Blood Gas"),
+  "Chloride, Urine": Count("Chloride, Urine"),
 
   "Lab Results Without Preferred Code": Count("Lab Results Without Preferred Code")
 }
@@ -67,3 +69,9 @@ define "Hemoglobin A1C":
 
 define "Estimated Glomerular Filtration Rate":
   ([Observation: Cx."Estimated Glomerular Filtration Rate"]).resulted()
+
+define "Arterial Blood Gas":
+  ([Observation: Cx."Arterial Blood Gas"]).resulted()
+
+define "Chloride, Urine":
+  ([Observation: Cx."Chloride, Urine"]).resulted()
