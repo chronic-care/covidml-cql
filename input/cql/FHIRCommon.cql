@@ -452,7 +452,34 @@ define function MostRecentSR(serviceRequests List<FHIR.ServiceRequest>):
 define function Mobile(contactPoints List<ContactPoint>):
   singleton from (contactPoints P where P.use = 'mobile')
 
+define function ToMetric(qty FHIR.Quantity):
+  case
+  when qty is null then null
+  when qty.value is null then null
+  when qty.code = '[lb_av]' or qty.unit = '[lb_av]' then
+    System.Quantity { value: qty.value * 0.454, unit: 'kg' }
+  when qty.code = 'g' or qty.unit = 'g' then
+    System.Quantity { value: qty.value / 1000, unit: 'kg' }
+  when qty.code = '[in_i]' or qty.unit = '[in_i]' then
+    System.Quantity { value: qty.value * 2.54, unit: 'cm' }
+  when qty.code = '[degF]' or qty.unit = '[degF]' then
+    System.Quantity { value: (qty.value - 32) * (5 / 9), unit: 'Cel' }
+  else
+    System.Quantity { value: qty.value, unit: qty.unit }
+  end
+
 define function ResultText(o Observation):
+  if o.value is FHIR.Quantity then
+    ToString(ToMetric(o.value as FHIR.Quantity).value)
+    // ToString((o.value as FHIR.Quantity).value.value)
+  else if o.value is CodeableConcept then
+    ConceptText(o.value as CodeableConcept)
+  else if o.value is FHIR.string then
+    o.value as FHIR.string
+  else
+    null
+
+define function ResultTextWithUnits(o Observation):
   // If Blood pressure observation, then extract component values.
   if o.code ~ "Blood pressure" then
     ToString(((singleton from (o.component C where (C.code ~ "Systolic blood pressure"))).value as FHIR.Quantity).value)

@@ -27,9 +27,8 @@ define ReportVitalSignsQA:
 
 // Most recent FHIR Observation for each vital sign data element.
 define ReportVitalSigns: {
-  "Blood Pressure": "Blood Pressure".mostRecentResult(),
-  "Systolic Blood Pressure": ToString("Blood Pressure".mostRecent().systolicValue()),
-  "Diastolic Blood Pressure": ToString("Blood Pressure".mostRecent().diastolicValue()),
+  "Systolic Blood Pressure": ToString("Blood Pressure".mostRecent().systolicValue().value),
+  "Diastolic Blood Pressure": ToString("Blood Pressure".mostRecent().diastolicValue().value),
   "Body Weight": "Body Weight".mostRecentResult(),
   "Body Height": "Body Height".mostRecentResult(),
   "BMI": "Body Mass Index".mostRecentResult(),
@@ -60,7 +59,6 @@ define fluent function preferredCoding(c FHIR.Coding):
       null
   end
 
-// TODO convert all units to metric, omit the units
 define fluent function mostRecentResult(observations List<Observation>):
   FC.ResultText(observations.mostRecent())
 
