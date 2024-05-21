@@ -103,6 +103,10 @@ define function PreferredConditionCoding(c FHIR.Coding):
       System.Code { system: 'http://snomed.info/sct', code: c.code.value, display: c.display.value }
     when c.system.value = 'http://hl7.org/fhir/sid/icd-10-cm' or c.system.value = 'urn:oid:2.16.840.1.113883.6.90' then
       System.Code { system: 'http://hl7.org/fhir/sid/icd-10-cm', code: c.code.value, display: c.display.value }
+    when c.system.value = 'http://hl7.org/fhir/sid/icd-10' or c.system.value = 'urn:oid:2.16.840.1.113883.6.3' then
+      System.Code { system: 'http://hl7.org/fhir/sid/icd-10', code: c.code.value, display: c.display.value }
+    when c.system.value = 'http://hl7.org/fhir/sid/icd-9-cm' or c.system.value = 'urn:oid:2.16.840.1.113883.6.103' then
+      System.Code { system: 'http://hl7.org/fhir/sid/icd-9-cm', code: c.code.value, display: c.display.value }
     else
       null
   end
