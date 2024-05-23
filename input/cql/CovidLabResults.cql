@@ -19,6 +19,7 @@ define ReportLabResultsQA:
   "Estimated Glomerular Filtration Rate": Count("Estimated Glomerular Filtration Rate"),
   "Arterial Blood Gas": Count("Arterial Blood Gas"),
   "Chloride, Urine": Count("Chloride, Urine"),
+  "Comprehensive Metabolic Panel": Count("Comprehensive Metabolic Panel"),
 
   "Lab Results Without Preferred Code": Count("Lab Results Without Preferred Code")
 }
@@ -28,7 +29,10 @@ define ReportLabResults: {
   "COVID19 Lab Tests": "COVID19 Lab Tests".mostRecentResult(),
   // "Prediabetes HbA1c Tests": "Prediabetes HbA1c Tests".mostRecentResult(),
   "Hemoglobin A1C": "Hemoglobin A1C".mostRecentResult(),
-  "Estimated Glomerular Filtration Rate": "Estimated Glomerular Filtration Rate".mostRecentResult()
+  "Estimated Glomerular Filtration Rate": "Estimated Glomerular Filtration Rate".mostRecentResult(),
+  "Arterial Blood Gas": "Arterial Blood Gas".mostRecentResult(),
+  "Chloride, Urine":"Chloride, Urine".mostRecentResult(),
+  "Comprehensive Metabolic Panel": "Comprehensive Metabolic Panel".mostRecentResult()
 }
 
 define "Lab Results Without Preferred Code":
@@ -75,3 +79,6 @@ define "Arterial Blood Gas":
 
 define "Chloride, Urine":
   ([Observation: Cx."Chloride, Urine"]).resulted()
+
+define "Comprehensive Metabolic Panel":
+  ([Observation: Cx."Comprehensive Metabolic Panel"]).resulted()
