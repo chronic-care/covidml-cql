@@ -107,6 +107,9 @@ define "All Problem List Items":
   "All Conditions" C
     where C.isProblemListItem()
 
+define "Active Problem List Items":
+  "All Problem List Items".active()
+
 define "Active Confirmed Problem List Items":
   "All Problem List Items".active().confirmed()
 

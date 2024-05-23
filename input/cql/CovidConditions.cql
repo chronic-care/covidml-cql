@@ -13,7 +13,7 @@ context Patient
 define ReportConditionsQA: 
 {
   "All Conditions": Count(UE."All Conditions"),
-  "Active Problem List": Count(UE."Active Confirmed Problem List Items"),
+  "Active Problem List": Count(UE."Active Problem List Items"),
   "Inactive Problem List": Count("Inactive Problem List"),
   "Encounter Diagnoses": Count(UE."All Encounter Diagnoses"),
   "Uncategorized Conditions": Count("Uncategorized Conditions"),
@@ -66,7 +66,8 @@ define ReportConditions:
   "Housing insecurity": Count("Housing insecurity") > 0,
   "Transportation insecurity": Count("Transportation insecurity") > 0,
 
-  "Problem List Codes": UE."Active Confirmed Problem List Items".preferredCodes()
+  "Problem List Codes": UE."All Problem List Items".preferredCodes(),
+  "Condition Codes": UE."All Conditions".preferredCodes()
 }
 
 define "Inactive Problem List":
@@ -116,130 +117,130 @@ define function PreferredConditionCoding(c FHIR.Coding):
 //
 
 define "Acute COVID 19 Diagnosis":
-  ([Condition: Cx."Acute COVID 19 Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Acute COVID 19 Diagnosis"]).active()
 
 define "Post Acute Sequelae of Sars Cov 2 infection (PASC)":
-  ([Condition: Cx."Post Acute Sequelae of Sars Cov 2 infection (PASC)"]).active().confirmed()
+  ([Condition: Cx."Post Acute Sequelae of Sars Cov 2 infection (PASC)"]).active()
 
 define "Acute Myocardial Infarction":
-  ([Condition: Cx."Acute Myocardial Infarction"]).active().confirmed()
+  ([Condition: Cx."Acute Myocardial Infarction"]).active()
 
 define "Ischemic Heart Disease":
-  ([Condition: Cx."Ischemic Heart Disease"]).active().confirmed()
+  ([Condition: Cx."Ischemic Heart Disease"]).active()
 
 define "Acute Coronary Syndromes":
-  ([Condition: Cx."Acute Coronary Syndromes"]).active().confirmed()
+  ([Condition: Cx."Acute Coronary Syndromes"]).active()
 
 define "Bronchiectasis Diagnosis":
-  ([Condition: Cx."Bronchiectasis Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Bronchiectasis Diagnosis"]).active()
 
 define "Hypertension, Pulmonary hypertension":
-  ([Condition: Cx."Hypertension, Pulmonary hypertension"]).active().confirmed()
+  ([Condition: Cx."Hypertension, Pulmonary hypertension"]).active()
 
 define "Pulmonary embolism diagnosis":
-  ([Condition: Cx."Pulmonary embolism diagnosis"]).active().confirmed()
+  ([Condition: Cx."Pulmonary embolism diagnosis"]).active()
 
 define "Cerebrovascular disease diagnosis":
-  ([Condition: Cx."Cerebrovascular disease diagnosis"]).active().confirmed()
+  ([Condition: Cx."Cerebrovascular disease diagnosis"]).active()
 
 define "Chronic kidney disease all stages (1 through 5)":
-  ([Condition: Cx."Chronic kidney disease all stages (1 through 5)"]).active().confirmed()
+  ([Condition: Cx."Chronic kidney disease all stages (1 through 5)"]).active()
 
 define "Cirrhosis or other liver disease":
-  ([Condition: Cx."Cirrhosis or other liver disease"]).active().confirmed()
+  ([Condition: Cx."Cirrhosis or other liver disease"]).active()
 
 define "Chronic obstructive pulmonary disease (COPD) Diagnosis":
-  ([Condition: Cx."Chronic obstructive pulmonary disease (COPD) Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Chronic obstructive pulmonary disease (COPD) Diagnosis"]).active()
 
 define "Type 1 Diabetes":
-  ([Condition: Cx."Type 1 Diabetes"]).active().confirmed()
+  ([Condition: Cx."Type 1 Diabetes"]).active()
 
 define "Type II Diabetes":
-  ([Condition: Cx."Type II Diabetes"]).active().confirmed()
+  ([Condition: Cx."Type II Diabetes"]).active()
 
 define "Heart Failure Diagnosis":
-  ([Condition: Cx."Heart Failure Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Heart Failure Diagnosis"]).active()
 
 define "Coronary Artery Disease No MI":
-  ([Condition: Cx."Coronary Artery Disease No MI"]).active().confirmed()
+  ([Condition: Cx."Coronary Artery Disease No MI"]).active()
 
 define "Cardiomyopathy":
-  ([Condition: Cx."Cardiomyopathy"]).active().confirmed()
+  ([Condition: Cx."Cardiomyopathy"]).active()
 
 define "Interstitial lung disease diagnosis":
-  ([Condition: Cx."Interstitial lung disease diagnosis"]).active().confirmed()
+  ([Condition: Cx."Interstitial lung disease diagnosis"]).active()
 
 define "Ever tobacco smoker":
-  ([Condition: Cx."Ever tobacco smoker"]).active().confirmed()
+  ([Condition: Cx."Ever tobacco smoker"]).active()
 
 define "Tuberculosis Disorders":
-  ([Condition: Cx."Tuberculosis Disorders"]).active().confirmed()
+  ([Condition: Cx."Tuberculosis Disorders"]).active()
 
 define "Obesity Conditions":
-  ([Condition: Cx."Obesity Conditions"]).active().confirmed()
+  ([Condition: Cx."Obesity Conditions"]).active()
 
 define "Pregnancy":
-  ([Condition: Cx."Pregnancy"]).active().confirmed()
+  ([Condition: Cx."Pregnancy"]).active()
 
 define "Depression Diagnosis":
-  ([Condition: Cx."Depression Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Depression Diagnosis"]).active()
 
 define "Schizophrenia":
-  ([Condition: Cx."Schizophrenia"]).active().confirmed()
+  ([Condition: Cx."Schizophrenia"]).active()
 
 define "HIV":
-  ([Condition: Cx."HIV"]).active().confirmed()
+  ([Condition: Cx."HIV"]).active()
 
 define "Dementia and Related Intracranial Pathologies":
-  ([Condition: Cx."Dementia and Related Intracranial Pathologies"]).active().confirmed()
+  ([Condition: Cx."Dementia and Related Intracranial Pathologies"]).active()
 
 define "Overweight or Obese":
-  ([Condition: Cx."Overweight or Obese"]).active().confirmed()
+  ([Condition: Cx."Overweight or Obese"]).active()
 
 define "Sickle cell disease and related blood disorders":
-  ([Condition: Cx."Sickle cell disease and related blood disorders"]).active().confirmed()
+  ([Condition: Cx."Sickle cell disease and related blood disorders"]).active()
 
 define "Substance abuse":
-  ([Condition: Cx."Substance abuse"]).active().confirmed()
+  ([Condition: Cx."Substance abuse"]).active()
 
 define "Cystic fibrosis":
-  ([Condition: Cx."Cystic fibrosis"]).active().confirmed()
+  ([Condition: Cx."Cystic fibrosis"]).active()
 
 define "Thalassemia":
-  ([Condition: Cx."Thalassemia"]).active().confirmed()
+  ([Condition: Cx."Thalassemia"]).active()
 
 define "Asthma diagnosis":
-  ([Condition: Cx."Asthma diagnosis"]).active().confirmed()
+  ([Condition: Cx."Asthma diagnosis"]).active()
 
 define "Hypertension, Primary and Secondary Diagnosis":
-  ([Condition: Cx."Hypertension, Primary and Secondary Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Hypertension, Primary and Secondary Diagnosis"]).active()
 
 define "Chronic Pain Conditions":
-  ([Condition: Cx."Chronic Pain Conditions"]).active().confirmed()
+  ([Condition: Cx."Chronic Pain Conditions"]).active()
 
 define "PostTraumatic stress disorder PTSD":
-  ([Condition: Cx."PostTraumatic stress disorder PTSD"]).active().confirmed()
+  ([Condition: Cx."PostTraumatic stress disorder PTSD"]).active()
 
 define "Myalgic Encephalomyelitis or Chronic Fatigue Syndrome":
-  ([Condition: Cx."Myalgic Encephalomyelitis or Chronic Fatigue Syndrome"]).active().confirmed()
+  ([Condition: Cx."Myalgic Encephalomyelitis or Chronic Fatigue Syndrome"]).active()
 
 define "Postural tachycardia syndrome (POTS) Diagnosis":
-  ([Condition: Cx."Postural tachycardia syndrome (POTS) Diagnosis"]).active().confirmed()
+  ([Condition: Cx."Postural tachycardia syndrome (POTS) Diagnosis"]).active()
 
 define "Ehlers-Danlos syndrome":
-  ([Condition: Cx."Ehlers-Danlos syndrome"]).active().confirmed()
+  ([Condition: Cx."Ehlers-Danlos syndrome"]).active()
 
 define "Stroke":
-  ([Condition: Cx."Stroke"]).active().confirmed()
+  ([Condition: Cx."Stroke"]).active()
 
 define "Food insecurity diagnoses":
-  ([Condition: Cx."Food insecurity diagnoses"]).active().confirmed()
+  ([Condition: Cx."Food insecurity diagnoses"]).active()
 
 define "Housing insecurity":
-  ([Condition: Cx."Housing insecurity"]).active().confirmed()
+  ([Condition: Cx."Housing insecurity"]).active()
 
 define "Transportation insecurity":
-  ([Condition: Cx."Transportation insecurity"]).active().confirmed()
+  ([Condition: Cx."Transportation insecurity"]).active()
 
 
 /*
