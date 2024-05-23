@@ -1,0 +1,116 @@
+{
+    "resourceType": "ValueSet",
+    "id": "Comprehensive-Metabolic-Panel",
+    "url": "http://emiadvisors.net/covidml/ValueSet/Comprehensive-Metabolic-Panel",
+    "version": "0.5.0",
+    "name": "Comprehensive-Metabolic-Panel",
+    "title": "Comprehensive-Metabolic-Panel",
+    "status": "active",
+    "date": "2024-05-18",
+    "publisher": "EMI Advisors",
+    "contact": [
+      {
+        "name": "EMI Advisors",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.emiadvisors.net/"
+          }
+        ]
+      }
+    ],
+    "description": "Includes LOINC codes for Comprehensive Metabolic Panel",
+    "compose": {
+      "include": [
+              {
+                  "system": "http://loinc.org",
+                  "concept": [
+                    {
+                      "code": "24323-8"
+                    },
+                    {
+                      "code": "2345-7"
+                    },
+                    {
+                      "code": "3094-0"
+                    },
+                    {
+                        "code": "2160-0"
+                      },
+                      {
+                        "code": "3097-3"
+                      },
+                      {
+                        "code": "33914-3"
+                      },   
+                      {
+                        "code": "50044-7"
+                      },
+                      {
+                        "code": "48642-3"
+                      },
+                      {
+                        "code": "48643-1"
+                      },   
+                      {
+                        "code": "62238-1"
+                      },
+                      {
+                        "code": "88293-6"
+                      },
+                      {
+                        "code": "88294-4"
+                      },   
+                      {
+                        "code": "17861-6"
+                      },
+                      {
+                        "code": "2885-2"
+                      },
+                      {
+                        "code": "1751-7"
+                      },  
+                      {
+                        "code": "10834-0"
+                      },
+                      {
+                        "code": "1759-0"
+                      },
+                      {
+                        "code": "1975-2"
+                      },   
+                      {
+                        "code": "6768-6"
+                      },
+                      {
+                        "code": "1742-6"
+                      },
+                      {
+                        "code": "1920-8"
+                      },   
+                      {
+                        "code": "24326-1"
+                      },
+                      {
+                        "code": "2951-2"
+                      },
+                      {
+                        "code": "2823-3"
+                      },  
+                      {
+                        "code": "2075-0"
+                      },
+                      {
+                        "code": "1963-8"
+                      },
+                      {
+                        "code": "2028-9"
+                      },    
+                      {
+                        "code": "33037-3"
+                      }                                                                                                 
+                  ]
+                }
+                   ]
+    }
+  }

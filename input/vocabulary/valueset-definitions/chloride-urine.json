@@ -1,0 +1,41 @@
+{
+    "resourceType": "ValueSet",
+    "id": "chloride-urine",
+    "url": "http://emiadvisors.net/covidml/ValueSet/chloride-urine",
+    "version": "0.5.0",
+    "name": "ChlorideUrine",
+    "title": "Chloride, Urine",
+    "status": "active",
+    "date": "2024-05-09",
+    "publisher": "EMI Advisors",
+    "contact": [
+      {
+        "name": "EMI Advisors",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.emiadvisors.net/"
+          }
+        ]
+      }
+    ],
+    "description": "Includes LOINC codes for Chloride, Urine",
+    "compose": {
+      "include": [
+              {
+                  "system": "http://loinc.org",
+                  "concept": [
+                    {
+                      "code": "43128-8"
+                    },
+                    {
+                      "code": "2078-4"
+                    },
+                    {
+                      "code": "2079-2"
+                    }                 
+                  ]
+                }
+                   ]
+    }
+  }

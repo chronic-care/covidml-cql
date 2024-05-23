@@ -64,6 +64,11 @@ valueset "Transportation insecurity": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16
 valueset "Prediabetes HbA1c Tests": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.32'
 valueset "COVID19 Lab Tests": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1580'
 
+valueset "Arterial Blood Gas": 'http://emiadvisors.net/covidml/ValueSet/Arterial-Blood-Gas'
+valueset "Chloride, Urine": 'http://emiadvisors.net/covidml/ValueSet/chloride-urine'
+valueset "Comprehensive Metabolic Panel": 'http://emiadvisors.net/covidml/ValueSet/Comprehensive-Metabolic-Panel'
+
+
 //
 // Labs from MCC, need review
 //
