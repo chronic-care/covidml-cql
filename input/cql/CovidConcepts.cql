@@ -85,6 +85,11 @@ valueset "Magnesium in Urine": 'http://emiadvisors.net/fhir/ValueSet/magnesium-u
 // Symptom value sets
 // ******************************
 
+valueset "Brain Fog": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1377'
+valueset "Impaired Sense of Smell": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1396'
+valueset "Impaired Sense of Taste": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1385'
+valueset "Post Exertional Malaise": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1457'
+valueset "Respiratory Distress": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1414'
 
 
 // ******************************

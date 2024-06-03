@@ -269,6 +269,14 @@ define fluent function isVitalSign(observation Observation):
   )
 
 /*
+@description: Returns true if the given observation is a social history result.
+*/
+define fluent function isSocialHistory(observation Observation):
+  exists (observation.category C
+    where C ~ "social-history"
+  )
+
+/*
 @description: Returns true if the given observation has status
 */
 define fluent function isResulted(observation Observation):
