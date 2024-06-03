@@ -1,7 +1,7 @@
 {
     "resourceType": "ValueSet",
     "id": "chloride-urine",
-    "url": "http://emiadvisors.net/covidml/ValueSet/chloride-urine",
+    "url": "http://emiadvisors.net/fhir/ValueSet/chloride-urine",
     "version": "0.5.0",
     "name": "ChlorideUrine",
     "title": "Chloride, Urine",
