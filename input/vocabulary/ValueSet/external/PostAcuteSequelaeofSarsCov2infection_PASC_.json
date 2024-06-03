@@ -18,13 +18,13 @@
   "version": "20220726",
   "name": "PostAcuteSequelaeOfSarsCov2InfectionPASCDiagnosis",
   "title": "Post Acute Sequelae of Sars Cov 2 infection (PASC) Diagnosis",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-07-26T01:02:37-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:07fff289-30af-45cb-a31b-bfd692027b34",
-    "timestamp": "2024-05-31T14:44:53-04:00",
+    "identifier": "urn:uuid:6dde2956-f374-45b8-97c2-eb5dd7033281",
+    "timestamp": "2024-06-03T12:08:12-04:00",
     "total": 3,
     "offset": 0,
     "parameter": [ {

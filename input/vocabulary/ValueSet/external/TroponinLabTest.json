@@ -18,13 +18,13 @@
   "version": "20150128",
   "name": "TroponinLabTest",
   "title": "Troponin Lab Test",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2015-01-28T01:00:02-05:00",
   "publisher": "Yale",
   "expansion": {
-    "identifier": "urn:uuid:06621909-b502-48a3-9678-c401e5d86fac",
-    "timestamp": "2024-05-31T14:46:23-04:00",
+    "identifier": "urn:uuid:63d9e1a7-e876-4af0-8fbb-3ce5a7de6bf4",
+    "timestamp": "2024-06-03T12:09:28-04:00",
     "total": 7,
     "offset": 0,
     "parameter": [ {

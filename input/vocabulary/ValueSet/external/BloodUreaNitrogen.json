@@ -18,13 +18,13 @@
   "version": "20221020",
   "name": "BloodUreaNitrogen",
   "title": "Blood Urea Nitrogen",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-10-20T17:30:52-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:13649999-1012-4d35-93d3-daeff51c258d",
-    "timestamp": "2024-05-31T14:46:22-04:00",
+    "identifier": "urn:uuid:06b778e6-4fe1-4bd3-8763-5ad89de6715a",
+    "timestamp": "2024-06-03T12:09:27-04:00",
     "total": 18,
     "offset": 0,
     "parameter": [ {

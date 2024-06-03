@@ -18,13 +18,13 @@
   "version": "20160615",
   "name": "CirrhosisOrOtherLiverDisease",
   "title": "Cirrhosis or other liver disease",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2016-06-15T01:00:03-04:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:fb6abdfd-2bd9-48a9-a80c-6fb548472185",
-    "timestamp": "2024-05-31T14:45:14-04:00",
+    "identifier": "urn:uuid:033597c8-ba56-4b7c-935e-467019fec7f5",
+    "timestamp": "2024-06-03T12:08:29-04:00",
     "total": 535,
     "offset": 0,
     "parameter": [ {

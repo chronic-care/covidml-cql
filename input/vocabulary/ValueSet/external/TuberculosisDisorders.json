@@ -18,13 +18,13 @@
   "version": "20200414",
   "name": "TuberculosisDisorders",
   "title": "Tuberculosis Disorders",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2020-04-14T01:00:20-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:28084eed-52e4-4eab-a337-64033e38e19a",
-    "timestamp": "2024-05-31T14:45:28-04:00",
+    "identifier": "urn:uuid:2dce3ded-7d90-479a-b3b0-6400985f937e",
+    "timestamp": "2024-06-03T12:08:41-04:00",
     "total": 346,
     "offset": 0,
     "parameter": [ {

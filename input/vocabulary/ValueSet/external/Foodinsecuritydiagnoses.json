@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113762.1.4.1247.17",
   "meta": {
     "versionId": "6",
-    "lastUpdated": "2024-04-24T13:26:52.000-04:00",
+    "lastUpdated": "2024-06-03T10:41:05.000-04:00",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
   },
   "extension": [ {
@@ -18,13 +18,13 @@
   "version": "20211113",
   "name": "FoodInsecurityDiagnoses",
   "title": "Food Insecurity Diagnoses",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2021-11-13T01:06:55-05:00",
   "publisher": "The Gravity Project Steward",
   "expansion": {
-    "identifier": "urn:uuid:5dc4c2ac-d438-40ee-bc83-2ba4243373c7",
-    "timestamp": "2024-05-31T14:46:04-04:00",
+    "identifier": "urn:uuid:312df8e1-fa13-443f-ba2d-8474b50998cb",
+    "timestamp": "2024-06-03T12:09:13-04:00",
     "total": 15,
     "offset": 0,
     "parameter": [ {

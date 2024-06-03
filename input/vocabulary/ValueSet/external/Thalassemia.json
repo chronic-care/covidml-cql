@@ -18,13 +18,13 @@
   "version": "20210916",
   "name": "Thalassemia",
   "title": "Thalassemia",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2021-09-16T01:01:06-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:db145b54-952b-4f54-a18b-6b2a85102433",
-    "timestamp": "2024-05-31T14:45:46-04:00",
+    "identifier": "urn:uuid:ca2a95a7-adca-482e-901b-b6e79dfad4d7",
+    "timestamp": "2024-06-03T12:08:57-04:00",
     "total": 97,
     "offset": 0,
     "parameter": [ {

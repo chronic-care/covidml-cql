@@ -18,13 +18,13 @@
   "version": "20221020",
   "name": "HemoglobinA1C",
   "title": "Hemoglobin A1C",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-10-20T17:30:52-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:fc8ace0d-01e3-4384-b5a5-a03e2086e720",
-    "timestamp": "2024-05-31T14:46:20-04:00",
+    "identifier": "urn:uuid:cd10d782-19dd-41e9-9731-40fc3f44f50c",
+    "timestamp": "2024-06-03T12:09:25-04:00",
     "total": 9,
     "offset": 0,
     "parameter": [ {

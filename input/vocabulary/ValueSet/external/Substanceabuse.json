@@ -18,13 +18,13 @@
   "version": "20170504",
   "name": "SubstanceAbuse",
   "title": "Substance Abuse",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:af2a7ea4-3aa9-4b1e-8f0c-89480f3b8560",
-    "timestamp": "2024-05-31T14:45:43-04:00",
+    "identifier": "urn:uuid:1706119f-614d-4e5d-b60d-ab2516dea4cd",
+    "timestamp": "2024-06-03T12:08:54-04:00",
     "total": 488,
     "offset": 0,
     "parameter": [ {

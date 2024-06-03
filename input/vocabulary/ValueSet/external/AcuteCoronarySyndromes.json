@@ -18,13 +18,13 @@
   "version": "20180523",
   "name": "AcuteCoronarySyndromes",
   "title": "Acute Coronary Syndromes",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2018-05-23T01:00:04-04:00",
   "publisher": "Lewin EP Steward",
   "expansion": {
-    "identifier": "urn:uuid:38ce3062-b252-414d-9268-3c28946994bb",
-    "timestamp": "2024-05-31T14:44:57-04:00",
+    "identifier": "urn:uuid:baa3bcbf-b49d-45ce-8ea4-60f0770bea37",
+    "timestamp": "2024-06-03T12:08:16-04:00",
     "total": 63,
     "offset": 0,
     "parameter": [ {

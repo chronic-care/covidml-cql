@@ -18,13 +18,13 @@
   "version": "20180310",
   "name": "TypeIIDiabetes",
   "title": "Type II Diabetes",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:99ea4be6-86b0-469b-af26-908474e155c1",
-    "timestamp": "2024-05-31T14:45:18-04:00",
+    "identifier": "urn:uuid:f6f8b57b-34df-4135-9de7-bc7df75b5d40",
+    "timestamp": "2024-06-03T12:08:33-04:00",
     "total": 138,
     "offset": 0,
     "parameter": [ {

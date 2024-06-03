@@ -18,13 +18,13 @@
   "version": "20221028",
   "name": "TransportationInsecurityDiagnoses",
   "title": "Transportation Insecurity Diagnoses",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-10-28T01:03:05-04:00",
   "publisher": "The Gravity Project Steward",
   "expansion": {
-    "identifier": "urn:uuid:4c964bf0-9325-4644-971d-c1256386ddaf",
-    "timestamp": "2024-05-31T14:46:07-04:00",
+    "identifier": "urn:uuid:ef80535c-65ce-4e75-9ce9-634a935becf9",
+    "timestamp": "2024-06-03T12:09:16-04:00",
     "total": 16,
     "offset": 0,
     "parameter": [ {

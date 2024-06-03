@@ -18,13 +18,13 @@
   "version": "20220819",
   "name": "HeartFailureDiagnosis",
   "title": "Heart Failure Diagnosis",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-08-19T01:02:57-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:b09b1ae0-f9a9-4039-a801-dd2ce608f358",
-    "timestamp": "2024-05-31T14:45:20-04:00",
+    "identifier": "urn:uuid:63c07185-6b07-4833-a1aa-5ebe3bceda77",
+    "timestamp": "2024-06-03T12:08:34-04:00",
     "total": 159,
     "offset": 0,
     "parameter": [ {

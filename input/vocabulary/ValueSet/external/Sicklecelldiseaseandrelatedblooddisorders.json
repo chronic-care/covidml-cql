@@ -18,13 +18,13 @@
   "version": "20160726",
   "name": "SickleCellDiseaseAndRelatedBloodDisorders",
   "title": "Sickle Cell Disease and Related Blood Disorders",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2016-07-26T01:00:02-04:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:4a274ad7-a595-4d62-af8b-5d0c3c9a88b9",
-    "timestamp": "2024-05-31T14:45:40-04:00",
+    "identifier": "urn:uuid:0f23c354-6e6c-475c-9872-0c320df5fd2b",
+    "timestamp": "2024-06-03T12:08:52-04:00",
     "total": 52,
     "offset": 0,
     "parameter": [ {

@@ -18,13 +18,13 @@
   "version": "20210113",
   "name": "GlucoseToleranceTestingLOINC",
   "title": "Glucose Tolerance Testing (LOINC)",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2021-01-13T01:00:22-05:00",
   "publisher": "American Academy of Neurology Steward",
   "expansion": {
-    "identifier": "urn:uuid:9968ab2b-643c-4c05-9e53-afe76e7027c9",
-    "timestamp": "2024-05-31T14:46:25-04:00",
+    "identifier": "urn:uuid:66c69238-18ed-44b1-a4a1-d5138b721e3e",
+    "timestamp": "2024-06-03T12:09:30-04:00",
     "total": 11,
     "offset": 0,
     "parameter": [ {

@@ -18,13 +18,13 @@
   "version": "20200330",
   "name": "ChronicKidneyDiseaseAllStages1Through5",
   "title": "Chronic Kidney Disease All Stages (1 through 5)",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2020-03-30T01:00:34-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:1937413d-e2c3-4026-a15b-1e7476931933",
-    "timestamp": "2024-05-31T14:45:10-04:00",
+    "identifier": "urn:uuid:1257e61a-76d2-4bf5-9f50-d32979411fa7",
+    "timestamp": "2024-06-03T12:08:27-04:00",
     "total": 96,
     "offset": 0,
     "parameter": [ {

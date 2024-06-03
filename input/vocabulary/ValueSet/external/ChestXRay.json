@@ -18,13 +18,13 @@
   "version": "20210908",
   "name": "ChestXRay",
   "title": "Chest X Ray",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "ACEP/AMA-PCPI Steward",
   "expansion": {
-    "identifier": "urn:uuid:ec624efd-570f-4285-b86a-8149a8a102ae",
-    "timestamp": "2024-05-31T14:46:10-04:00",
+    "identifier": "urn:uuid:0a763f17-8e2b-4d0a-8e3f-006f2e3867aa",
+    "timestamp": "2024-06-03T12:09:17-04:00",
     "total": 79,
     "offset": 0,
     "parameter": [ {

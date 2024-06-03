@@ -18,13 +18,13 @@
   "version": "20140630",
   "name": "Expired",
   "title": "Expired",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2014-06-30T01:00:02-04:00",
   "publisher": "Yale",
   "expansion": {
-    "identifier": "urn:uuid:1846e187-ee9a-4fbb-bbe0-0b949c33c39e",
-    "timestamp": "2024-05-31T14:45:52-04:00",
+    "identifier": "urn:uuid:59bac668-b906-4e65-9ea7-d4e9d337a43f",
+    "timestamp": "2024-06-03T12:09:03-04:00",
     "total": 8,
     "offset": 0,
     "parameter": [ {

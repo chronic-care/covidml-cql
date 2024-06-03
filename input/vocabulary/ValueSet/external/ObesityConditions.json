@@ -18,13 +18,13 @@
   "version": "20200414",
   "name": "ObesityConditions",
   "title": "Obesity Conditions",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2020-04-14T01:00:20-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:6ad3c548-a758-434d-82c5-9b6dafb7a62b",
-    "timestamp": "2024-05-31T14:45:30-04:00",
+    "identifier": "urn:uuid:4aed0513-abd6-4300-8cbb-2dfc9f76124f",
+    "timestamp": "2024-06-03T12:08:43-04:00",
     "total": 78,
     "offset": 0,
     "parameter": [ {

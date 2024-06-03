@@ -18,13 +18,13 @@
   "version": "20220819",
   "name": "HypertensionPrimaryAndSecondaryDiagnosis",
   "title": "Hypertension, Primary and Secondary Diagnosis",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-08-19T01:02:57-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:5d0c02ee-6883-4ee5-92aa-240175ffcf70",
-    "timestamp": "2024-05-31T14:45:51-04:00",
+    "identifier": "urn:uuid:30f90de2-bd69-404f-bd04-5f84037da1b8",
+    "timestamp": "2024-06-03T12:09:02-04:00",
     "total": 86,
     "offset": 0,
     "parameter": [ {

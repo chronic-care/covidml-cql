@@ -18,13 +18,13 @@
   "version": "20220819",
   "name": "CerebrovascularDiseaseDiagnosis",
   "title": "Cerebrovascular Disease Diagnosis",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-08-19T01:02:57-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:e8c5df74-af3a-4dfe-9e00-1d447fc9a4d8",
-    "timestamp": "2024-05-31T14:45:07-04:00",
+    "identifier": "urn:uuid:855170d5-c711-4260-9104-944c7b96fd0e",
+    "timestamp": "2024-06-03T12:08:23-04:00",
     "total": 1068,
     "offset": 0,
     "parameter": [ {

@@ -18,13 +18,13 @@
   "version": "20210914",
   "name": "IschemicHeartDisease",
   "title": "Ischemic Heart Disease",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2021-09-14T01:00:38-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:3aa2e32c-bd46-45c5-aabe-7e59cc57badf",
-    "timestamp": "2024-05-31T14:44:56-04:00",
+    "identifier": "urn:uuid:f822b5de-f85b-41c5-b7f2-53e194ab6bc7",
+    "timestamp": "2024-06-03T12:08:15-04:00",
     "total": 249,
     "offset": 0,
     "parameter": [ {

@@ -18,13 +18,13 @@
   "version": "20220608",
   "name": "InterstitialLungDiseaseDiagnosis",
   "title": "Interstitial lung disease Diagnosis",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-06-08T01:03:01-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:05a26c3f-99ac-4a0f-9e19-7d17b58a0e79",
-    "timestamp": "2024-05-31T14:45:25-04:00",
+    "identifier": "urn:uuid:4d086d5f-aab9-4e11-88be-01f6873715ae",
+    "timestamp": "2024-06-03T12:08:38-04:00",
     "total": 110,
     "offset": 0,
     "parameter": [ {

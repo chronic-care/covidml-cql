@@ -18,13 +18,13 @@
   "version": "20220608",
   "name": "HypertensionPulmonaryHypertension",
   "title": "Hypertension, Pulmonary Hypertension",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-06-08T01:03:01-04:00",
   "publisher": "HL7 Patient Care WG Steward",
   "expansion": {
-    "identifier": "urn:uuid:0832ad25-09f4-423f-bf25-863b45720d20",
-    "timestamp": "2024-05-31T14:44:59-04:00",
+    "identifier": "urn:uuid:c635c079-f5bb-4d21-9b66-b0e3cdbd5b11",
+    "timestamp": "2024-06-03T12:08:18-04:00",
     "total": 80,
     "offset": 0,
     "parameter": [ {

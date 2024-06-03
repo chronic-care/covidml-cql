@@ -18,13 +18,13 @@
   "version": "20211201",
   "name": "CTAngiographyOfChest",
   "title": "CT Angiography of Chest",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "urn:uuid:acfa1430-8d5c-42fd-b302-9bd0a280f9eb",
-    "timestamp": "2024-05-31T14:46:13-04:00",
+    "identifier": "urn:uuid:c64ac18c-348e-43c3-90df-41821c78ea8e",
+    "timestamp": "2024-06-03T12:09:21-04:00",
     "total": 20,
     "offset": 0,
     "parameter": [ {
