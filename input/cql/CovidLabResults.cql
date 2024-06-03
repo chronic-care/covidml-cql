@@ -13,26 +13,42 @@ context Patient
 define ReportLabResultsQA: 
 {
   "Lab Results Count": Count(UE."All Laboratory Results"),
-  "COVID19 Lab Tests": Count("COVID19 Lab Tests"),
-  // "Prediabetes HbA1c Tests": Count("Prediabetes HbA1c Tests"),
-  "Hemoglobin A1C": Count("Hemoglobin A1C"),
-  "Estimated Glomerular Filtration Rate": Count("Estimated Glomerular Filtration Rate"),
-  "Arterial Blood Gas": Count("Arterial Blood Gas"),
-  "Chloride, Urine": Count("Chloride, Urine"),
-  "Comprehensive Metabolic Panel": Count("Comprehensive Metabolic Panel"),
+  "Lab Results Without Preferred Code": Count("Lab Results Without Preferred Code"),
 
-  "Lab Results Without Preferred Code": Count("Lab Results Without Preferred Code")
+  "COVID19 Lab Tests": Count("COVID19 Lab Tests"),
+  "Hemoglobin A1C": Count("Hemoglobin A1C"),
+  "Blood Urea Nitrogen": Count("Blood Urea Nitrogen"),
+  "Bilirubin lab test": Count("Bilirubin lab test"),
+  "Troponin Lab Test": Count("Troponin Lab Test"),
+  "Ferritin": Count("Ferritin"),
+  "Glucose Tolerance Testing": Count("Glucose Tolerance Testing"),
+  "Cerebral Spinal Fluid (CSF) Analysis": Count("Cerebral Spinal Fluid (CSF) Analysis"),
+
+  "Arterial Blood Gas": Count("Arterial Blood Gas"),
+  "Comprehensive Metabolic Panel": Count("Comprehensive Metabolic Panel"),
+  "Chloride, Urine": Count("Chloride, Urine"),
+  "Calcium in Blood, Serum or Plasma": Count("Calcium in Blood, Serum or Plasma"),
+  "Magnesium in Blood, Serum or Plasma": Count("Magnesium in Blood, Serum or Plasma"),
+  "Magnesium in Urine": Count("Magnesium in Urine")
 }
 
 // Most recent FHIR Observation for each laboratory data element.
 define ReportLabResults: {
   "COVID19 Lab Tests": "COVID19 Lab Tests".mostRecentResult(),
-  // "Prediabetes HbA1c Tests": "Prediabetes HbA1c Tests".mostRecentResult(),
   "Hemoglobin A1C": "Hemoglobin A1C".mostRecentResult(),
-  "Estimated Glomerular Filtration Rate": "Estimated Glomerular Filtration Rate".mostRecentResult(),
+  "Blood Urea Nitrogen": "Blood Urea Nitrogen".mostRecentResult(),
+  "Bilirubin lab test": "Bilirubin lab test".mostRecentResult(),
+  "Troponin Lab Test": "Troponin Lab Test".mostRecentResult(),
+  "Ferritin": "Ferritin".mostRecentResult(),
+  "Glucose Tolerance Testing": "Glucose Tolerance Testing".mostRecentResult(),
+  "Cerebral Spinal Fluid (CSF) Analysis": "Cerebral Spinal Fluid (CSF) Analysis".mostRecentResult(),
+
   "Arterial Blood Gas": "Arterial Blood Gas".mostRecentResult(),
-  "Chloride, Urine":"Chloride, Urine".mostRecentResult(),
-  "Comprehensive Metabolic Panel": "Comprehensive Metabolic Panel".mostRecentResult()
+  "Comprehensive Metabolic Panel": "Comprehensive Metabolic Panel".mostRecentResult(),
+  "Chloride, Urine": "Chloride, Urine".mostRecentResult(),
+  "Calcium in Blood, Serum or Plasma": "Calcium in Blood, Serum or Plasma".mostRecentResult(),
+  "Magnesium in Blood, Serum or Plasma": "Magnesium in Blood, Serum or Plasma".mostRecentResult(),
+  "Magnesium in Urine": "Magnesium in Urine".mostRecentResult()
 }
 
 define "Lab Results Without Preferred Code":
@@ -65,20 +81,42 @@ define fluent function mostRecentResult(observations List<Observation>):
 define "COVID19 Lab Tests":
   ([Observation: Cx."COVID19 Lab Tests"]).resulted()
 
-// define "Prediabetes HbA1c Tests":
-//   ([Observation: Cx."Prediabetes HbA1c Tests"]).resulted()
-
 define "Hemoglobin A1C":
   ([Observation: Cx."Hemoglobin A1C"]).resulted()
 
-define "Estimated Glomerular Filtration Rate":
-  ([Observation: Cx."Estimated Glomerular Filtration Rate"]).resulted()
+define "Blood Urea Nitrogen":
+  ([Observation: Cx."Blood Urea Nitrogen"]).resulted()
+
+define "Bilirubin lab test":
+  ([Observation: Cx."Bilirubin lab test"]).resulted()
+
+define "Troponin Lab Test":
+  ([Observation: Cx."Troponin Lab Test"]).resulted()
+
+define "Ferritin":
+  ([Observation: Cx."Ferritin"]).resulted()
+
+define "Glucose Tolerance Testing":
+  ([Observation: Cx."Glucose Tolerance Testing"]).resulted()
+
+define "Cerebral Spinal Fluid (CSF) Analysis":
+  ([Observation: Cx."Cerebral Spinal Fluid (CSF) Analysis"]).resulted()
+
 
 define "Arterial Blood Gas":
   ([Observation: Cx."Arterial Blood Gas"]).resulted()
 
+define "Comprehensive Metabolic Panel":
+  ([Observation: Cx."Comprehensive Metabolic Panel"]).resulted()
+
 define "Chloride, Urine":
   ([Observation: Cx."Chloride, Urine"]).resulted()
 
-define "Comprehensive Metabolic Panel":
-  ([Observation: Cx."Comprehensive Metabolic Panel"]).resulted()
+define "Calcium in Blood, Serum or Plasma":
+  ([Observation: Cx."Calcium in Blood, Serum or Plasma"]).resulted()
+
+define "Magnesium in Blood, Serum or Plasma":
+  ([Observation: Cx."Magnesium in Blood, Serum or Plasma"]).resulted()
+
+define "Magnesium in Urine":
+  ([Observation: Cx."Magnesium in Urine"]).resulted()

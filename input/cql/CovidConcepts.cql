@@ -61,26 +61,30 @@ valueset "Transportation insecurity": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16
 // Lab result value sets
 // ******************************
 
-valueset "Prediabetes HbA1c Tests": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.32'
+// Value sets from VSAC
 valueset "COVID19 Lab Tests": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1580'
-
-valueset "Arterial Blood Gas": 'http://emiadvisors.net/covidml/ValueSet/Arterial-Blood-Gas'
-valueset "Chloride, Urine": 'http://emiadvisors.net/covidml/ValueSet/chloride-urine'
-valueset "Comprehensive Metabolic Panel": 'http://emiadvisors.net/covidml/ValueSet/Comprehensive-Metabolic-Panel'
-
-
-//
-// Labs from MCC, need review
-//
-valueset "Total Cholesterol": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.139'
-valueset "High Density Lipoprotein": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.135'
-valueset "Low Density Lipoprotein": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.215'
-valueset "Triglyceride Blood Serum Plasma": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.137'
 valueset "Hemoglobin A1C": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.119'
-valueset "Estimated Glomerular Filtration Rate": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1000'
-valueset "Serum Albumin": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.151'
-valueset "Serum Creatinine": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.111'
-valueset "Urine Albumin Creatinine Ratio": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.2.1002'
+valueset "Blood Urea Nitrogen": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.113'
+valueset "Bilirubin lab test": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.223'
+valueset "Troponin Lab Test": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.190.5.3'
+valueset "Ferritin": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.190.5.3'
+valueset "Glucose Tolerance Testing": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1034.360'
+valueset "Cerebral Spinal Fluid (CSF) Analysis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1573'
+
+// Value sets defined by project team
+valueset "Chloride, Urine": 'http://emiadvisors.net/fhir/ValueSet/chloride-urine'
+
+valueset "Arterial Blood Gas": 'http://emiadvisors.net/fhir/ValueSet/arterial-blood-gas'
+valueset "Comprehensive Metabolic Panel": 'http://emiadvisors.net/fhir/ValueSet/comprehensive-metabolic-panel'
+valueset "Calcium in Blood, Serum or Plasma": 'http://emiadvisors.net/fhir/ValueSet/calcium-blood-serum-plasma'
+valueset "Magnesium in Blood, Serum or Plasma": 'http://emiadvisors.net/fhir/ValueSet/magnesium-blood-serum-plasma'
+valueset "Magnesium in Urine": 'http://emiadvisors.net/fhir/ValueSet/magnesium-urine'
+
+
+// ******************************
+// Symptom value sets
+// ******************************
+
 
 
 // ******************************
