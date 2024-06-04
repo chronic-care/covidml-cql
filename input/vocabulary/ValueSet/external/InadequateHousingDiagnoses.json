@@ -1,30 +1,29 @@
 {
   "resourceType": "ValueSet",
-  "id": "2.16.840.1.113762.1.4.1222.1463",
+  "id": "2.16.840.1.113762.1.4.1247.48",
   "meta": {
-    "versionId": "6",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "versionId": "12",
+    "lastUpdated": "2024-06-04T01:21:19.000-04:00",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
   },
   "extension": [ {
     "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-    "valueDate": "2022-06-02"
+    "valueDate": "2024-06-04"
   } ],
-  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1463",
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.48",
   "identifier": [ {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:2.16.840.1.113762.1.4.1222.1463"
+    "value": "urn:oid:2.16.840.1.113762.1.4.1247.48"
   } ],
-  "version": "20220602",
-  "name": "BronchiectasisDiagnosis",
-  "title": "Bronchiectasis Diagnosis",
-  "status": "retired",
-  "experimental": false,
-  "date": "2022-06-02T01:04:20-04:00",
-  "publisher": "HL7 Patient Care WG Steward",
+  "version": "20240604",
+  "name": "InadequateHousingDiagnoses",
+  "title": "Inadequate Housing Diagnoses",
+  "status": "active",
+  "date": "2024-06-04T01:21:19-04:00",
+  "publisher": "The Gravity Project Steward",
   "expansion": {
-    "identifier": "urn:uuid:4fac7423-05f2-4b5a-83be-bdb7b864e32d",
-    "timestamp": "2024-06-04T13:44:47-04:00",
+    "identifier": "urn:uuid:f3f22657-b688-4729-802d-1054bbb7c289",
+    "timestamp": "2024-06-04T13:46:00-04:00",
     "total": 27,
     "offset": 0,
     "parameter": [ {
@@ -37,138 +36,138 @@
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "12295008",
-      "display": "Bronchiectasis (disorder)"
+      "code": "105531004",
+      "display": "Housing unsatisfactory (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "12310001",
-      "display": "Childhood bronchiectasis (disorder)"
+      "code": "105532006",
+      "display": "Overcrowded in house (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "13217005",
-      "display": "Fusiform bronchiectasis (disorder)"
+      "code": "105535008",
+      "display": "Lack of heat in house (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "19325002",
-      "display": "Traction bronchiectasis (disorder)"
+      "code": "105536009",
+      "display": "Living in housing without electricity (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "195984007",
-      "display": "Recurrent bronchiectasis (disorder)"
+      "code": "1162585007",
+      "display": "Infestation of place of residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "195985008",
-      "display": "Post-infective bronchiectasis (disorder)"
+      "code": "1197631001",
+      "display": "Lead in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "23022004",
-      "display": "Tuberculous bronchiectasis (disorder)"
+      "code": "1197632008",
+      "display": "Inadequate equipment for safe food storage in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233627004",
-      "display": "Congenital cystic bronchiectasis (disorder)"
+      "code": "1197634009",
+      "display": "Inadequate food preparation equipment in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233628009",
-      "display": "Acquired bronchiectasis (disorder)"
+      "code": "1197636006",
+      "display": "Radon in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233629001",
-      "display": "Idiopathic bronchiectasis (disorder)"
+      "code": "1197637002",
+      "display": "Carbon monoxide in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233630006",
-      "display": "Obstructive bronchiectasis (disorder)"
+      "code": "1197640002",
+      "display": "Inadequate smoke detection equipment in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233631005",
-      "display": "Toxin-induced bronchiectasis (disorder)"
+      "code": "1197641003",
+      "display": "Inadequate carbon monoxide detection equipment in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233632003",
-      "display": "Bronchiectasis due to aspiration of toxic substance (disorder)"
+      "code": "1197645007",
+      "display": "Lack of functioning sink in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233633008",
-      "display": "Bronchiectasis due to inhalation of toxic substance (disorder)"
+      "code": "1197646008",
+      "display": "Lack of functioning toilet in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "233634002",
-      "display": "Post-lung transplantation bronchiectasis (disorder)"
+      "code": "1197647004",
+      "display": "Asbestos in residence (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "42402006",
-      "display": "Kartagener syndrome (disorder)"
+      "code": "224255009",
+      "display": "Mold growth in home (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "445378003",
-      "display": "Acute exacerbation of bronchiectasis (disorder)"
+      "code": "423798004",
+      "display": "Lack of cooling in house (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "51068008",
-      "display": "Adult bronchiectasis (disorder)"
+      "code": "471981000124106",
+      "display": "Substandard housing caused by structural insufficiency (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "52500008",
-      "display": "Saccular bronchiectasis (disorder)"
+      "code": "471991000124109",
+      "display": "Residence does not meet functional needs (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "714203003",
-      "display": "Acute bronchitis co-occurrent with bronchiectasis (disorder)"
+      "code": "472001000124106",
+      "display": "At risk of housing code violation (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "77593006",
-      "display": "Congenital bronchiectasis (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "83457000",
-      "display": "Cylindrical bronchiectasis (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/731000124108/version/20240301",
-      "code": "879963005",
-      "display": "Exacerbation of bronchiectasis caused by infection (disorder)"
+      "code": "5491000175103",
+      "display": "Lack of running water in house (finding)"
     }, {
       "system": "http://hl7.org/fhir/sid/icd-10-cm",
       "version": "2024",
-      "code": "J47",
-      "display": "Bronchiectasis"
+      "code": "Z59.1",
+      "display": "Inadequate housing"
     }, {
       "system": "http://hl7.org/fhir/sid/icd-10-cm",
       "version": "2024",
-      "code": "J47.0",
-      "display": "Bronchiectasis with acute lower respiratory infection"
+      "code": "Z59.10",
+      "display": "Inadequate housing, unspecified"
     }, {
       "system": "http://hl7.org/fhir/sid/icd-10-cm",
       "version": "2024",
-      "code": "J47.1",
-      "display": "Bronchiectasis with (acute) exacerbation"
+      "code": "Z59.11",
+      "display": "Inadequate housing environmental temperature"
     }, {
       "system": "http://hl7.org/fhir/sid/icd-10-cm",
       "version": "2024",
-      "code": "J47.9",
-      "display": "Bronchiectasis, uncomplicated"
+      "code": "Z59.12",
+      "display": "Inadequate housing utilities"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "Z59.19",
+      "display": "Other inadequate housing"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "Z71.88",
+      "display": "Encounter for counseling for socioeconomic factors"
     } ]
   }
 }

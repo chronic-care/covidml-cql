@@ -52,10 +52,13 @@ valueset "Postural tachycardia syndrome (POTS) Diagnosis": 'http://cts.nlm.nih.g
 valueset "Ehlers-Danlos syndrome": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1505'
 valueset "Stroke": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.618'
 valueset "Food insecurity diagnoses": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.17'
-valueset "Housing insecurity": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1290'
 valueset "Transportation insecurity": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.26'
 
-// valueset "": 'http://cts.nlm.nih.gov/fhir/ValueSet/'
+valueset "Down Syndrome (Disorders) (SNOMED)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.2124'
+valueset "Down Syndrome (Disorders) (ICD10CM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.2125'
+valueset "Housing Instability Diagnoses": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.24'
+valueset "Inadequate Housing Diagnoses": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.48'
+valueset "Homelessness Diagnoses": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.18'
 
 // ******************************
 // Lab result value sets

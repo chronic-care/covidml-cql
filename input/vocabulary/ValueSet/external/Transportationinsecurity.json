@@ -2,29 +2,28 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1247.26",
   "meta": {
-    "versionId": "14",
-    "lastUpdated": "2024-05-01T13:29:42.000-04:00",
+    "versionId": "20",
+    "lastUpdated": "2024-06-04T01:21:19.000-04:00",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
   },
   "extension": [ {
     "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-    "valueDate": "2022-10-28"
+    "valueDate": "2024-06-04"
   } ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.26",
   "identifier": [ {
     "system": "urn:ietf:rfc:3986",
     "value": "urn:oid:2.16.840.1.113762.1.4.1247.26"
   } ],
-  "version": "20221028",
+  "version": "20240604",
   "name": "TransportationInsecurityDiagnoses",
   "title": "Transportation Insecurity Diagnoses",
-  "status": "retired",
-  "experimental": false,
-  "date": "2022-10-28T01:03:05-04:00",
+  "status": "active",
+  "date": "2024-06-04T01:21:19-04:00",
   "publisher": "The Gravity Project Steward",
   "expansion": {
-    "identifier": "urn:uuid:ef80535c-65ce-4e75-9ce9-634a935becf9",
-    "timestamp": "2024-06-03T12:09:16-04:00",
+    "identifier": "urn:uuid:b635d87a-1acb-4407-9734-a4affe69ced7",
+    "timestamp": "2024-06-04T13:45:50-04:00",
     "total": 16,
     "offset": 0,
     "parameter": [ {

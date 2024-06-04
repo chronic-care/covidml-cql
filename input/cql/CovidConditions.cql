@@ -25,6 +25,7 @@ define ReportConditions:
 {
   "Acute COVID 19 Diagnosis": Count("Acute COVID 19 Diagnosis") > 0,
   "Post Acute Sequelae of Sars Cov 2 infection (PASC)": Count("Post Acute Sequelae of Sars Cov 2 infection (PASC)") > 0,
+  "COVID 19 Diagnosis": Count("COVID 19 Diagnosis") > 0,
   "Acute Myocardial Infarction": Count("Acute Myocardial Infarction") > 0,
   "Ischemic Heart Disease": Count("Ischemic Heart Disease") > 0,
   "Acute Coronary Syndromes": Count("Acute Coronary Syndromes") > 0,
@@ -37,6 +38,7 @@ define ReportConditions:
   "Chronic obstructive pulmonary disease (COPD) Diagnosis": Count("Chronic obstructive pulmonary disease (COPD) Diagnosis") > 0,
   "Type 1 Diabetes": Count("Type 1 Diabetes") > 0,
   "Type II Diabetes": Count("Type II Diabetes") > 0,
+  "Diabetes (All Types)": Count("Diabetes (All Types)") > 0,
   "Heart Failure Diagnosis": Count("Heart Failure Diagnosis") > 0,
   "Coronary Artery Disease No MI": Count("Coronary Artery Disease No MI") > 0,
   "Cardiomyopathy": Count("Cardiomyopathy") > 0,
@@ -62,6 +64,7 @@ define ReportConditions:
   "Postural tachycardia syndrome (POTS) Diagnosis": Count("Postural tachycardia syndrome (POTS) Diagnosis") > 0,
   "Ehlers-Danlos syndrome": Count("Ehlers-Danlos syndrome") > 0,
   "Stroke": Count("Stroke") > 0,
+  "Down Syndrome": Count("Down Syndrome") > 0,
   "Food insecurity diagnoses": Count("Food insecurity diagnoses") > 0,
   "Housing insecurity": Count("Housing insecurity") > 0,
   "Transportation insecurity": Count("Transportation insecurity") > 0,
@@ -122,6 +125,10 @@ define "Acute COVID 19 Diagnosis":
 define "Post Acute Sequelae of Sars Cov 2 infection (PASC)":
   ([Condition: Cx."Post Acute Sequelae of Sars Cov 2 infection (PASC)"]).active()
 
+define "COVID 19 Diagnosis":
+  "Acute COVID 19 Diagnosis"
+  union "Post Acute Sequelae of Sars Cov 2 infection (PASC)"
+
 define "Acute Myocardial Infarction":
   ([Condition: Cx."Acute Myocardial Infarction"]).active()
 
@@ -157,6 +164,10 @@ define "Type 1 Diabetes":
 
 define "Type II Diabetes":
   ([Condition: Cx."Type II Diabetes"]).active()
+
+define "Diabetes (All Types)":
+  "Type 1 Diabetes"
+  union "Type II Diabetes"
 
 define "Heart Failure Diagnosis":
   ([Condition: Cx."Heart Failure Diagnosis"]).active()
@@ -236,13 +247,32 @@ define "Stroke":
 define "Food insecurity diagnoses":
   ([Condition: Cx."Food insecurity diagnoses"]).active()
 
-define "Housing insecurity":
-  ([Condition: Cx."Housing insecurity"]).active()
-
 define "Transportation insecurity":
   ([Condition: Cx."Transportation insecurity"]).active()
 
+define "Down Syndrome (Disorders) (SNOMED)":
+  ([Condition: Cx."Down Syndrome (Disorders) (SNOMED)"]).active()
 
+define "Down Syndrome (Disorders) (ICD10CM)":
+  ([Condition: Cx."Down Syndrome (Disorders) (ICD10CM)"]).active()
+
+define "Down Syndrome":
+  "Down Syndrome (Disorders) (SNOMED)"
+  union "Down Syndrome (Disorders) (ICD10CM)"
+
+define "Housing Instability Diagnoses":
+  ([Condition: Cx."Housing Instability Diagnoses"]).active()
+
+define "Inadequate Housing Diagnoses":
+  ([Condition: Cx."Inadequate Housing Diagnoses"]).active()
+
+define "Homelessness Diagnoses":
+  ([Condition: Cx."Homelessness Diagnoses"]).active()
+
+define "Housing insecurity":
+  "Housing Instability Diagnoses"
+  union "Inadequate Housing Diagnoses"
+  union "Homelessness Diagnoses"
 /*
 // TODO complete this list of all categorized conditions if you want a separate list of other, uncategorized conditions.
 define CategorizedConditions: 
