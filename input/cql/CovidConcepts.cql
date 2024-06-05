@@ -122,6 +122,8 @@ code "White": '2106-3' from "Race" display 'White'
 code "Left (qualifier value)": '7771000' from "SNOMEDCT" display 'Left (qualifier value)'
 code "Right (qualifier value)": '24028007' from "SNOMEDCT" display 'Right (qualifier value)'
 
+code "Tobacco smoking status": '72166-2' from "LOINC" display 'Tobacco smoking status'
+
 code "Blood pressure": '85354-9' from "LOINC" display 'Blood pressure systolic and diastolic'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 code "Diastolic blood pressure": '8462-4' from "LOINC" display 'Diastolic blood pressure'

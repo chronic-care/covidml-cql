@@ -11,19 +11,19 @@ context Patient
 /// Report QA analysis with count of resources, no PHI.
 define ReportOtherObservationsQA: 
 {
-  "Social History": Count("Social History Observations"),
+  "Smoking Status Count": Count("Tobacco smoking status"),
 
-  "Brain Fog": Count("Brain Fog"),
-  "Impaired Sense of Smell": Count("Impaired Sense of Smell"),
-  "Impaired Sense of Taste": Count("Impaired Sense of Taste"),
-  "Post Exertional Malaise": Count("Post Exertional Malaise"),
-  "Respiratory Distress": Count("Respiratory Distress")
+  "Brain Fog Count": Count("Brain Fog"),
+  "Impaired Sense of Smell Count": Count("Impaired Sense of Smell"),
+  "Impaired Sense of Taste Count": Count("Impaired Sense of Taste"),
+  "Post Exertional Malaise Count": Count("Post Exertional Malaise"),
+  "Respiratory Distress Count": Count("Respiratory Distress")
 }
 
 /// Report a list of codes for all other observations.
 define ReportOtherObservations: 
 {
-  "Social History": "Social History Observations".observationCodes(),
+  "Smoking Status": "Tobacco smoking status".mostRecent().firstValueCode(),
 
   "Brain Fog": "Brain Fog".observationCodes(),
   "Impaired Sense of Smell": "Impaired Sense of Smell".observationCodes(),
@@ -46,6 +46,18 @@ define fluent function firstCode(observation Observation):
     observation.code.coding c
       return System.Code { system: c.system.value, code: c.code.value, display: c.display.value }
   )
+
+define fluent function firstValueCode(obs Observation):
+  if obs.value is CodeableConcept then
+    (obs.value as CodeableConcept).conceptCode()
+  else
+    null
+
+define fluent function conceptCode(c FHIR.CodeableConcept):
+  Coalesce((c.coding) c2 return c2.code.value)
+
+define "Tobacco smoking status":
+  ([Observation: Cx."Tobacco smoking status"]).resulted()
 
 define "Brain Fog":
   ([Observation: Cx."Brain Fog"]).resulted()
