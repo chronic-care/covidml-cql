@@ -17,7 +17,9 @@ define ReportConditionsQA:
   "Inactive Problem List": Count("Inactive Problem List"),
   "Encounter Diagnoses": Count(UE."All Encounter Diagnoses"),
   "Uncategorized Conditions": Count("Uncategorized Conditions"),
-  "Conditions Without Preferred Code": Count("Conditions Without Preferred Code")
+  "Conditions Without Preferred Code": Count("Conditions Without Preferred Code"),
+  "Conditions With SNOMED Code": Count(UE."All Conditions".snomedCodes()),
+  "Conditions With ICD-10 Code": Count(UE."All Conditions".icd10Codes())
 }
 
 /// Report boolean values for input to ML model. Also list of codes for active problem list items.
@@ -70,7 +72,9 @@ define ReportConditions:
   "Transportation insecurity": Count("Transportation insecurity") > 0,
 
   "Problem List Codes": UE."All Problem List Items".preferredCodes(),
-  "Condition Codes": UE."All Conditions".preferredCodes()
+  "Condition Codes": UE."All Conditions".preferredCodes(),
+  "SNOMED Codes": UE."All Conditions".snomedCodes(),
+  "ICD-10 Codes": UE."All Conditions".icd10Codes()
 }
 
 define "Inactive Problem List":
@@ -87,21 +91,47 @@ define "Conditions Without Preferred Code":
   UE."All Conditions" condition
     where condition.preferredCode() is null
 
+// Returns a list of code tokens
 define fluent function preferredCodes(conditions List<Condition>):
   conditions condition
-    where condition.preferredCode() is not null
-    return condition.preferredCode().code
+    let preferredCode: condition.preferredCode()
+    where preferredCode.code is not null
+    return preferredCode.code
+  
+// Returns a list of code tokens
+define fluent function snomedCodes(conditions List<Condition>):
+  conditions condition
+    let preferredCode: condition.snomedCode()
+    where preferredCode.code is not null
+    return preferredCode.code
+  
+// Returns a list of code tokens
+define fluent function icd10Codes(conditions List<Condition>):
+  conditions condition
+    let preferredCode: condition.icd10Code()
+    where preferredCode.code is not null
+    return preferredCode.code
   
 // Returns a System.Code with sytem and code parameters
 define fluent function preferredCode(condition Condition):
-  First(
-    condition.code.coding c
-      let preferredCode: PreferredConditionCoding(c)
-      where preferredCode.code is not null
-      return preferredCode
-  )
+  Coalesce((condition.code.coding) c return c.preferredConditionCoding())
 
-define function PreferredConditionCoding(c FHIR.Coding):
+define fluent function snomedCode(condition Condition):
+  Coalesce((condition.code.coding) c return c.snomedCoding())
+
+define fluent function icd10Code(condition Condition):
+  Coalesce((condition.code.coding) c return c.icd10Coding())
+
+
+// define fluent function preferredCode2(condition Condition):
+//   First(
+//     condition.code.coding c
+//       let preferredCode: PreferredConditionCoding(c)
+//       where preferredCode.code is not null
+//       return preferredCode
+//   )
+
+define fluent function preferredConditionCoding(c FHIR.Coding):
   case
     when c.system.value = 'http://snomed.info/sct' or c.system.value = 'urn:oid:2.16.840.1.113883.6.96' then
       System.Code { system: 'http://snomed.info/sct', code: c.code.value, display: c.display.value }
@@ -111,6 +141,22 @@ define function PreferredConditionCoding(c FHIR.Coding):
       System.Code { system: 'http://hl7.org/fhir/sid/icd-10', code: c.code.value, display: c.display.value }
     when c.system.value = 'http://hl7.org/fhir/sid/icd-9-cm' or c.system.value = 'urn:oid:2.16.840.1.113883.6.103' then
       System.Code { system: 'http://hl7.org/fhir/sid/icd-9-cm', code: c.code.value, display: c.display.value }
+    else
+      null
+  end
+
+define fluent function snomedCoding(c FHIR.Coding):
+  case
+    when c.system.value = 'http://snomed.info/sct' or c.system.value = 'urn:oid:2.16.840.1.113883.6.96' then
+      System.Code { system: 'http://snomed.info/sct', code: c.code.value, display: c.display.value }
+    else
+      null
+  end
+
+define fluent function icd10Coding(c FHIR.Coding):
+  case
+    when c.system.value = 'http://hl7.org/fhir/sid/icd-10-cm' or c.system.value = 'urn:oid:2.16.840.1.113883.6.90' then
+      System.Code { system: 'http://hl7.org/fhir/sid/icd-10-cm', code: c.code.value, display: c.display.value }
     else
       null
   end
