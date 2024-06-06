@@ -521,6 +521,9 @@ define function ConceptText(c FHIR.CodeableConcept):
 define function ConceptCode(c FHIR.CodeableConcept):
   Coalesce((c.coding) c3 return c3.code.value)
 
+define fluent function conceptCode(c FHIR.CodeableConcept):
+  Coalesce((c.coding) c3 return c3.code.value)
+
 // Returns a text representation of a Quantity with the Quantity's value and unit.
 // If the unit is {score}, then omit it (as it is not useful to display)
 // @param q - a FHIR Quantity to get text for
