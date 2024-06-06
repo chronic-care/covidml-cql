@@ -23,38 +23,38 @@ define ReportOtherObservationsQA:
 /// Report a list of codes for all other observations.
 define ReportOtherObservations: 
 {
-  "Smoking Status": "Tobacco smoking status".mostRecent().firstValueCode(),
+  "Smoking Status": "Tobacco smoking status".mostRecent().resultValue(),
 
-  "Brain Fog": "Brain Fog".observationCodes(),
-  "Impaired Sense of Smell": "Impaired Sense of Smell".observationCodes(),
-  "Impaired Sense of Taste": "Impaired Sense of Taste".observationCodes(),
-  "Post Exertional Malaise": "Post Exertional Malaise".observationCodes(),
-  "Respiratory Distress": "Respiratory Distress".observationCodes()
+  "Brain Fog": "Brain Fog".mostRecent().resultValue(),
+  "Impaired Sense of Smell": "Impaired Sense of Smell".mostRecent().resultValue(),
+  "Impaired Sense of Taste": "Impaired Sense of Taste".mostRecent().resultValue(),
+  "Post Exertional Malaise": "Post Exertional Malaise".mostRecent().resultValue(),
+  "Respiratory Distress": "Respiratory Distress".mostRecent().resultValue()
 }
 
 define "Social History Observations":
   ["Observation"] O
     where O.isSocialHistory()
 
-define fluent function observationCodes(observations List<Observation>):
-  (observations observation
-    return observation.firstCode().code)
+// define fluent function observationCodes(observations List<Observation>):
+//   (observations observation
+//     return observation.firstCode().code)
   
 // Returns a System.Code with sytem and code parameters for first Observation coding
-define fluent function firstCode(observation Observation):
-  First(
-    observation.code.coding c
-      return System.Code { system: c.system.value, code: c.code.value, display: c.display.value }
-  )
+// define fluent function firstCode(observation Observation):
+//   First(
+//     observation.code.coding c
+//       return System.Code { system: c.system.value, code: c.code.value, display: c.display.value }
+//   )
 
-define fluent function firstValueCode(obs Observation):
-  if obs.value is CodeableConcept then
-    (obs.value as CodeableConcept).conceptCode()
-  else
-    null
+// define fluent function firstValueCode(obs Observation):
+//   if obs.value is CodeableConcept then
+//     (obs.value as CodeableConcept).conceptCode()
+//   else
+//     null
 
-define fluent function conceptCode(c FHIR.CodeableConcept):
-  Coalesce((c.coding) c2 return c2.code.value)
+// define fluent function conceptCode(c FHIR.CodeableConcept):
+//   Coalesce((c.coding) c2 return c2.code.value)
 
 define "Tobacco smoking status":
   ([Observation: Cx."Tobacco smoking status"]).resulted()

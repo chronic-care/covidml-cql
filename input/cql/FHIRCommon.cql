@@ -487,6 +487,16 @@ define function ResultText(o Observation):
   else
     null
 
+define fluent function resultValue(o Observation):
+  if o.value is FHIR.Quantity then
+    ToString(ToMetric(o.value as FHIR.Quantity).value)
+  else if o.value is CodeableConcept then
+    ConceptCode(o.value as CodeableConcept)
+  else if o.value is FHIR.string then
+    o.value as FHIR.string
+  else
+    null
+
 define function ResultTextWithUnits(o Observation):
   // If Blood pressure observation, then extract component values.
   if o.code ~ "Blood pressure" then
@@ -507,6 +517,9 @@ define function ResultTextWithUnits(o Observation):
 // @returns {System.String} the display text or null if none is found
 define function ConceptText(c FHIR.CodeableConcept):
   Coalesce(c.text.value, Coalesce((c.coding) c2 return c2.display.value), Coalesce((c.coding) c3 return c3.code.value))
+
+define function ConceptCode(c FHIR.CodeableConcept):
+  Coalesce((c.coding) c3 return c3.code.value)
 
 // Returns a text representation of a Quantity with the Quantity's value and unit.
 // If the unit is {score}, then omit it (as it is not useful to display)
