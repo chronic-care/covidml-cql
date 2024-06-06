@@ -30,8 +30,12 @@
   "experimental": false,
   "publisher": "EMI Advisors, Inc.",
   "expansion": {
-    "timestamp": "2024-05-31T10:48:42-06:00",
+    "timestamp": "2024-06-06T09:58:20-06:00",
     "contains": [ {
+      "system": "http://loinc.org",
+      "code": "24323-8",
+      "display": "Comprehensive metabolic 2000 panel - Serum or Plasma"
+    }, {
       "system": "http://loinc.org",
       "code": "2345-7",
       "display": "Glucose [Mass/volume] in Serum or Plasma"

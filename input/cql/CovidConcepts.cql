@@ -75,13 +75,16 @@ valueset "Glucose Tolerance Testing": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16
 valueset "Cerebral Spinal Fluid (CSF) Analysis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1573'
 
 // Value sets defined by project team
-valueset "Chloride, Urine": 'http://emiadvisors.net/fhir/ValueSet/chloride-urine'
-
 valueset "Arterial Blood Gas": 'http://emiadvisors.net/fhir/ValueSet/arterial-blood-gas'
 valueset "Comprehensive Metabolic Panel": 'http://emiadvisors.net/fhir/ValueSet/comprehensive-metabolic-panel'
 valueset "Calcium in Blood, Serum or Plasma": 'http://emiadvisors.net/fhir/ValueSet/calcium-blood-serum-plasma'
 valueset "Magnesium in Blood, Serum or Plasma": 'http://emiadvisors.net/fhir/ValueSet/magnesium-blood-serum-plasma'
 valueset "Magnesium in Urine": 'http://emiadvisors.net/fhir/ValueSet/magnesium-urine'
+valueset "Chloride, Urine": 'http://emiadvisors.net/fhir/ValueSet/chloride-urine'
+valueset "Chloride, Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/chloride-blood-serum-plasma'
+valueset "Creatinine, Urine": 'http://emiadvisors.net/fhir/ValueSet/creatinine-urine'
+valueset "Creatinine, Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/creatinine-blood-serum-plasma'
+valueset "Phosphate Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/phosphate-blood-serum-plasma'
 
 
 // ******************************

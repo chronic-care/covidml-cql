@@ -26,10 +26,14 @@ define ReportLabResultsQA:
 
   "Arterial Blood Gas": Count("Arterial Blood Gas"),
   "Comprehensive Metabolic Panel": Count("Comprehensive Metabolic Panel"),
-  "Chloride, Urine": Count("Chloride, Urine"),
   "Calcium in Blood, Serum or Plasma": Count("Calcium in Blood, Serum or Plasma"),
   "Magnesium in Blood, Serum or Plasma": Count("Magnesium in Blood, Serum or Plasma"),
-  "Magnesium in Urine": Count("Magnesium in Urine")
+  "Magnesium in Urine": Count("Magnesium in Urine"),
+  "Chloride, Urine": Count("Chloride, Urine"),
+  "Chloride, Blood, Serum, or Plasma": Count("Chloride, Blood, Serum, or Plasma"),
+  "Creatinine, Urine": Count("Creatinine, Urine"),
+  "Creatinine, Blood, Serum, or Plasma": Count("Creatinine, Blood, Serum, or Plasma"),
+  "Phosphate Blood, Serum, or Plasma": Count("Phosphate Blood, Serum, or Plasma")
 }
 
 // Most recent FHIR Observation for each laboratory data element.
@@ -45,10 +49,14 @@ define ReportLabResults: {
 
   "Arterial Blood Gas": "Arterial Blood Gas".mostRecentResult(),
   "Comprehensive Metabolic Panel": "Comprehensive Metabolic Panel".mostRecentResult(),
-  "Chloride, Urine": "Chloride, Urine".mostRecentResult(),
   "Calcium in Blood, Serum or Plasma": "Calcium in Blood, Serum or Plasma".mostRecentResult(),
   "Magnesium in Blood, Serum or Plasma": "Magnesium in Blood, Serum or Plasma".mostRecentResult(),
-  "Magnesium in Urine": "Magnesium in Urine".mostRecentResult()
+  "Magnesium in Urine": "Magnesium in Urine".mostRecentResult(),
+  "Chloride, Urine": "Chloride, Urine".mostRecentResult(),
+  "Chloride, Blood, Serum, or Plasma": "Chloride, Blood, Serum, or Plasma".mostRecentResult(),
+  "Creatinine, Urine": "Creatinine, Urine".mostRecentResult(),
+  "Creatinine, Blood, Serum, or Plasma": "Creatinine, Blood, Serum, or Plasma".mostRecentResult(),
+  "Phosphate Blood, Serum, or Plasma": "Phosphate Blood, Serum, or Plasma".mostRecentResult()
 }
 
 define "Lab Results Without Preferred Code":
@@ -109,9 +117,6 @@ define "Arterial Blood Gas":
 define "Comprehensive Metabolic Panel":
   ([Observation: Cx."Comprehensive Metabolic Panel"]).resulted()
 
-define "Chloride, Urine":
-  ([Observation: Cx."Chloride, Urine"]).resulted()
-
 define "Calcium in Blood, Serum or Plasma":
   ([Observation: Cx."Calcium in Blood, Serum or Plasma"]).resulted()
 
@@ -120,3 +125,18 @@ define "Magnesium in Blood, Serum or Plasma":
 
 define "Magnesium in Urine":
   ([Observation: Cx."Magnesium in Urine"]).resulted()
+
+define "Chloride, Urine":
+  ([Observation: Cx."Chloride, Urine"]).resulted()
+
+define "Chloride, Blood, Serum, or Plasma":
+  ([Observation: Cx."Chloride, Blood, Serum, or Plasma"]).resulted()
+
+define "Creatinine, Urine":
+  ([Observation: Cx."Creatinine, Urine"]).resulted()
+
+define "Creatinine, Blood, Serum, or Plasma":
+  ([Observation: Cx."Creatinine, Blood, Serum, or Plasma"]).resulted()
+
+define "Phosphate Blood, Serum, or Plasma":
+  ([Observation: Cx."Phosphate Blood, Serum, or Plasma"]).resulted()
