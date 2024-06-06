@@ -33,8 +33,8 @@ define ReportOtherObservations:
 }
 
 define "Social History Observations":
-  ["Observation"] O
-    where O.isSocialHistory()
+  (["Observation"] O
+    where O.isSocialHistory()).resulted()
 
 // define fluent function observationCodes(observations List<Observation>):
 //   (observations observation

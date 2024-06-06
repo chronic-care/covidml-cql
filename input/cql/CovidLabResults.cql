@@ -80,63 +80,83 @@ define fluent function preferredCoding(c FHIR.Coding):
       null
   end
 
-// TODO: omit the units
 define fluent function mostRecentResult(observations List<Observation>):
   FC.ResultText(observations.mostRecent())
 
-// Lab Result FHIR Observations sorted in descending order by issue date.
+// Lab Result FHIR Observations
+
+define "All Laboratory Results":
+  UE."All Laboratory Results".resulted()
 
 define "COVID19 Lab Tests":
-  ([Observation: Cx."COVID19 Lab Tests"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."COVID19 Lab Tests"
 
 define "Hemoglobin A1C":
-  ([Observation: Cx."Hemoglobin A1C"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Hemoglobin A1C"
 
 define "Blood Urea Nitrogen":
-  ([Observation: Cx."Blood Urea Nitrogen"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Blood Urea Nitrogen"
 
 define "Bilirubin lab test":
-  ([Observation: Cx."Bilirubin lab test"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Bilirubin lab test"
 
 define "Troponin Lab Test":
-  ([Observation: Cx."Troponin Lab Test"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Troponin Lab Test"
 
 define "Ferritin":
-  ([Observation: Cx."Ferritin"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Ferritin"
 
 define "Glucose Tolerance Testing":
-  ([Observation: Cx."Glucose Tolerance Testing"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Glucose Tolerance Testing"
 
 define "Cerebral Spinal Fluid (CSF) Analysis":
-  ([Observation: Cx."Cerebral Spinal Fluid (CSF) Analysis"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Cerebral Spinal Fluid (CSF) Analysis"
 
 
 define "Arterial Blood Gas":
-  ([Observation: Cx."Arterial Blood Gas"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Arterial Blood Gas"
 
 define "Comprehensive Metabolic Panel":
-  ([Observation: Cx."Comprehensive Metabolic Panel"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Comprehensive Metabolic Panel"
 
 define "Calcium in Blood, Serum or Plasma":
-  ([Observation: Cx."Calcium in Blood, Serum or Plasma"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Calcium in Blood, Serum or Plasma"
 
 define "Magnesium in Blood, Serum or Plasma":
-  ([Observation: Cx."Magnesium in Blood, Serum or Plasma"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Magnesium in Blood, Serum or Plasma"
 
 define "Magnesium in Urine":
-  ([Observation: Cx."Magnesium in Urine"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Magnesium in Urine"
 
 define "Chloride, Urine":
-  ([Observation: Cx."Chloride, Urine"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Chloride, Urine"
 
 define "Chloride, Blood, Serum, or Plasma":
-  ([Observation: Cx."Chloride, Blood, Serum, or Plasma"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Chloride, Blood, Serum, or Plasma"
 
 define "Creatinine, Urine":
-  ([Observation: Cx."Creatinine, Urine"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Creatinine, Urine"
 
 define "Creatinine, Blood, Serum, or Plasma":
-  ([Observation: Cx."Creatinine, Blood, Serum, or Plasma"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Creatinine, Blood, Serum, or Plasma"
 
 define "Phosphate Blood, Serum, or Plasma":
-  ([Observation: Cx."Phosphate Blood, Serum, or Plasma"]).resulted()
+  "All Laboratory Results" lab
+    where lab.code in Cx."Phosphate Blood, Serum, or Plasma"

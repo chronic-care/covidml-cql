@@ -12,7 +12,7 @@ context Patient
 /// Report QA analysis with count of resources, no PHI.
 define ReportVitalSignsQA: 
 {
-  "All Vital Signs": Count(UE."All Vital Signs"),
+  "All Vital Signs": Count("All Vital Signs"),
   "Blood Pressure": Count("Blood Pressure"),
   "Body Weight": Count("Body Weight"),
   "Body Height": Count("Body Height"),
@@ -74,26 +74,37 @@ define fluent function diastolicValue(o Observation):
   else
     null
 
+define "All Vital Signs":
+  UE."All Vital Signs".resulted()
+
 define "Blood Pressure":
-  ([Observation: Cx."Blood pressure"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Blood pressure"
 
 define "Body Temperature":
-  ([Observation: Cx."Body temperature"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Body temperature"
 
 define "Body Height":
-  ([Observation: Cx."Body height"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Body height"
 
 define "Body Weight":
-  ([Observation: Cx."Body weight"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Body weight"
 
 define "Body Mass Index":
-  ([Observation: Cx."Body mass index"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Body mass index"
 
 define "Heart Rate":
-  ([Observation: Cx."Heart rate"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Heart rate"
 
 define "Oxygen Saturation":
-  ([Observation: Cx."Oxygen saturation"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Oxygen saturation"
 
 define "Respiratory Rate":
-  ([Observation: Cx."Respiratory rate"]).resulted()
+  "All Vital Signs" obs
+    where obs.code ~ Cx."Respiratory rate"
