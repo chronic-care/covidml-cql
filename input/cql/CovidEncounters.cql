@@ -40,10 +40,11 @@ context Patient
 
 define ReportEncounters: 
 {
-  Outpatient: Count("Outpatient Encounters"),
-  Inpatient: Count("Inpatient Encounters"),
-  EmergencyDepartment: Count("Emergency Department Encounters"),
-  All: Count("All Encounters")
+  "Outpatient": Count("Outpatient Encounters"),
+  "Inpatient": Count("Inpatient Encounters"),
+  "EmergencyDepartment": Count("Emergency Department Encounters"),
+  "Encounters with Reason": Count("Encounters with Reason"),
+  "All": Count("All Encounters")
 }
 
 define "Outpatient Encounters":
@@ -60,6 +61,10 @@ define "Inpatient Encounters":
 define "Emergency Department Encounters":
   [Encounter] enc
     where enc.class ~ "emergency"
+
+define "Encounters with Reason":
+  [Encounter] enc
+    where enc.reasonCode is not null
     
 define "All Encounters":
   ["Encounter"]
