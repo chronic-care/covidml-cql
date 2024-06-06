@@ -40,7 +40,18 @@
                 "period": {
                     "start": "2025-03-16T08:00:00.000+00:00",
                     "end": "2025-03-16T08:15:00.000+00:00"
-                }
+                },
+                "reasonCode": [
+                  {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                        "code": "M54.5",
+                        "display": "Low back pain"
+                      }
+                    ]
+                  }
+                ]
             },
             "request": {
                 "method": "PUT",
