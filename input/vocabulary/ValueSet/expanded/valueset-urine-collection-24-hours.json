@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "phosphate-blood-serum-plasma",
+  "id": "urine-collection-24-hours",
   "meta": {
     "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
   },
@@ -23,50 +23,46 @@
     "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
     "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
   } ],
-  "url": "http://emiadvisors.net/fhir/ValueSet/phosphate-blood-serum-plasma",
+  "url": "http://emiadvisors.net/fhir/ValueSet/urine-collection-24-hours",
   "version": "20240531",
-  "title": "Phosphate Blood, Serum, or Plasma",
+  "title": "Urine Collection 24 Hours",
   "status": "active",
   "experimental": false,
   "publisher": "EMI Advisors, Inc.",
   "expansion": {
-    "timestamp": "2024-06-12T08:19:04-06:00",
+    "timestamp": "2024-06-12T08:19:38-06:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "code": "2774-8",
-      "display": "Phosphate [Mass/volume] in Blood"
+      "code": "81323-8",
+      "display": "Urine collection associated observations panel - 24 hour Urine"
     }, {
       "system": "http://loinc.org",
-      "code": "24519-1",
-      "display": "Phosphate [Moles/volume] in Blood"
+      "code": "3167-4",
+      "display": "Volume of 24 hour Urine"
     }, {
       "system": "http://loinc.org",
-      "code": "27123-9",
-      "display": "Phosphate [Mass/mass] in Red Blood Cells"
+      "code": "41395-5",
+      "display": "Collection date of Urine"
     }, {
       "system": "http://loinc.org",
-      "code": "24520-9",
-      "display": "Phosphate [Moles/volume] in Red Blood Cells"
+      "code": "19089-2",
+      "display": "Collection of urine specimen start time"
     }, {
       "system": "http://loinc.org",
-      "code": "2777-1",
-      "display": "Phosphate [Mass/volume] in Serum or Plasma"
+      "code": "19088-4",
+      "display": "Collection of urine specimen start date"
     }, {
       "system": "http://loinc.org",
-      "code": "14879-1",
-      "display": "Phosphate [Moles/volume] in Serum or Plasma"
+      "code": "19087-6",
+      "display": "Collection of urine specimen end time"
     }, {
       "system": "http://loinc.org",
-      "code": "48617-5",
-      "display": "Phosphate [Mass/volume] in Serum or Plasma --post dialysis"
+      "code": "19086-8",
+      "display": "Collection of urine specimen end date"
     }, {
       "system": "http://loinc.org",
-      "code": "55972-4",
-      "display": "Phosphate [Moles/volume] in Serum or Plasma --post dialysis"
-    }, {
-      "system": "http://loinc.org",
-      "code": "48641-5",
-      "display": "Phosphate [Mass/volume] in Serum or Plasma --pre dialysis"
+      "code": "13362-9",
+      "display": "Collection duration of Urine"
     } ]
   }
 }

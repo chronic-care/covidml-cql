@@ -33,7 +33,17 @@ define ReportLabResultsQA:
   "Chloride, Blood, Serum, or Plasma": Count("Chloride, Blood, Serum, or Plasma"),
   "Creatinine, Urine": Count("Creatinine, Urine"),
   "Creatinine, Blood, Serum, or Plasma": Count("Creatinine, Blood, Serum, or Plasma"),
-  "Phosphate Blood, Serum, or Plasma": Count("Phosphate Blood, Serum, or Plasma")
+  "Phosphate Blood, Serum, or Plasma": Count("Phosphate Blood, Serum, or Plasma"),
+  "Coagulation Assay": Count("Coagulation Assay"),
+  "Complete Blood Count": Count("Complete Blood Count"),
+  "Creatine Kinase Blood, Serum, or Plasma": Count("Creatine Kinase Blood, Serum, or Plasma"),
+  "D Dimer Test": Count("D Dimer Test"),
+  "Electrolytes Panel Blood, Serum, or Plasma": Count("Electrolytes Panel Blood, Serum, or Plasma"),
+  "Inflammatory Markers (CRP) Blood, Serum, or Plasma": Count("Inflammatory Markers (CRP) Blood, Serum, or Plasma"),
+  "Lipid Serum, or Plasma": Count("Lipid Serum, or Plasma"),
+  "Sputum Culture": Count("Sputum Culture"),
+  "Urine Collection 24 Hours": Count("Urine Collection 24 Hours"),
+  "Urine Routine": Count("Urine Routine")
 }
 
 // Most recent FHIR Observation for each laboratory data element.
@@ -56,7 +66,17 @@ define ReportLabResults: {
   "Chloride, Blood, Serum, or Plasma": "Chloride, Blood, Serum, or Plasma".mostRecentResult(),
   "Creatinine, Urine": "Creatinine, Urine".mostRecentResult(),
   "Creatinine, Blood, Serum, or Plasma": "Creatinine, Blood, Serum, or Plasma".mostRecentResult(),
-  "Phosphate Blood, Serum, or Plasma": "Phosphate Blood, Serum, or Plasma".mostRecentResult()
+  "Phosphate Blood, Serum, or Plasma": "Phosphate Blood, Serum, or Plasma".mostRecentResult(),
+  "Coagulation Assay": "Coagulation Assay".mostRecentResult(),
+  "Complete Blood Count": "Complete Blood Count".mostRecentResult(),
+  "Creatine Kinase Blood, Serum, or Plasma": "Creatine Kinase Blood, Serum, or Plasma".mostRecentResult(),
+  "D Dimer Test": "D Dimer Test".mostRecentResult(),
+  "Electrolytes Panel Blood, Serum, or Plasma": "Electrolytes Panel Blood, Serum, or Plasma".mostRecentResult(),
+  "Inflammatory Markers (CRP) Blood, Serum, or Plasma": "Inflammatory Markers (CRP) Blood, Serum, or Plasma".mostRecentResult(),
+  "Lipid Serum, or Plasma": "Lipid Serum, or Plasma".mostRecentResult(),
+  "Sputum Culture": "Sputum Culture".mostRecentResult(),
+  "Urine Collection 24 Hours": "Urine Collection 24 Hours".mostRecentResult(),
+  "Urine Routine": "Urine Routine".mostRecentResult()
 }
 
 define "Lab Results Without Preferred Code":
@@ -160,3 +180,43 @@ define "Creatinine, Blood, Serum, or Plasma":
 define "Phosphate Blood, Serum, or Plasma":
   "All Laboratory Results" lab
     where lab.code in Cx."Phosphate Blood, Serum, or Plasma"
+
+define "Coagulation Assay":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Coagulation Assay"
+
+define "Complete Blood Count":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Complete Blood Count"
+
+define "Creatine Kinase Blood, Serum, or Plasma":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Creatine Kinase Blood, Serum, or Plasma"
+
+define "D Dimer Test":
+  "All Laboratory Results" lab
+    where lab.code in Cx."D Dimer Test"
+
+define "Electrolytes Panel Blood, Serum, or Plasma":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Electrolytes Panel Blood, Serum, or Plasma"
+
+define "Inflammatory Markers (CRP) Blood, Serum, or Plasma":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Inflammatory Markers (CRP) Blood, Serum, or Plasma"
+
+define "Lipid Serum, or Plasma":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Lipid Serum, or Plasma"
+
+define "Sputum Culture":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Sputum Culture"
+
+define "Urine Collection 24 Hours":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Urine Collection 24 Hours"
+
+define "Urine Routine":
+  "All Laboratory Results" lab
+    where lab.code in Cx."Urine Routine"

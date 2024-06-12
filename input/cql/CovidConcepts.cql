@@ -74,7 +74,7 @@ valueset "Ferritin": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.
 valueset "Glucose Tolerance Testing": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1034.360'
 valueset "Cerebral Spinal Fluid (CSF) Analysis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1573'
 
-// Value sets defined by project team
+// Value sets defined by project team in spreadsheets
 valueset "Arterial Blood Gas": 'http://emiadvisors.net/fhir/ValueSet/arterial-blood-gas'
 valueset "Comprehensive Metabolic Panel": 'http://emiadvisors.net/fhir/ValueSet/comprehensive-metabolic-panel'
 valueset "Calcium in Blood, Serum or Plasma": 'http://emiadvisors.net/fhir/ValueSet/calcium-blood-serum-plasma'
@@ -85,6 +85,18 @@ valueset "Chloride, Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/Value
 valueset "Creatinine, Urine": 'http://emiadvisors.net/fhir/ValueSet/creatinine-urine'
 valueset "Creatinine, Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/creatinine-blood-serum-plasma'
 valueset "Phosphate Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/phosphate-blood-serum-plasma'
+
+// Spreadsheets 11-20
+valueset "Coagulation Assay": 'http://emiadvisors.net/fhir/ValueSet/coagulation-assay'
+valueset "Complete Blood Count": 'http://emiadvisors.net/fhir/ValueSet/complete-blood-count'
+valueset "Creatine Kinase Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/creatine-kinase-blood-serum-plasma'
+valueset "D Dimer Test": 'http://emiadvisors.net/fhir/ValueSet/d-dimer-test'
+valueset "Electrolytes Panel Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/electrolytes-panel-blood-serum-plasma'
+valueset "Inflammatory Markers (CRP) Blood, Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/inflammatory-markers-blood-serum-plasma'
+valueset "Lipid Serum, or Plasma": 'http://emiadvisors.net/fhir/ValueSet/lipid-serum-plasma'
+valueset "Sputum Culture": 'http://emiadvisors.net/fhir/ValueSet/sputum-culture'
+valueset "Urine Collection 24 Hours": 'http://emiadvisors.net/fhir/ValueSet/urine-collection-24-hours'
+valueset "Urine Routine": 'http://emiadvisors.net/fhir/ValueSet/urine-routine'
 
 
 // ******************************
