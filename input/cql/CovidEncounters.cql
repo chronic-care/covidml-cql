@@ -40,11 +40,11 @@ context Patient
 
 define ReportEncounters: 
 {
-  "Outpatient": Count("Outpatient Encounters"),
-  "Inpatient": Count("Inpatient Encounters"),
-  "EmergencyDepartment": Count("Emergency Department Encounters"),
-  "Encounters with Reason": Count("Encounters with Reason"),
-  "All": Count("All Encounters")
+  "Outpatient Count": Count("Outpatient Encounters"),
+  "Inpatient Count": Count("Inpatient Encounters"),
+  "EmergencyDepartment Count": Count("Emergency Department Encounters"),
+  "Encounters with Reason Count": Count("Encounters with Reason"),
+  "All Count": Count("All Encounters")
 }
 
 define "Outpatient Encounters":

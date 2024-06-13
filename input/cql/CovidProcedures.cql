@@ -11,8 +11,8 @@ context Patient
 /// Report QA analysis with count of resources, no PHI.
 define ReportProceduresQA: 
 {
-  "All Procedures": Count("All Procedures"),
-  "Procedures Without Preferred Code": Count("Procedures Without Preferred Code")
+  "All Procedures Count": Count("All Procedures"),
+  "Procedures Without Preferred Code Count": Count("Procedures Without Preferred Code")
 }
 
 /// Report a list of codes for all procedures, using preferred coding system.

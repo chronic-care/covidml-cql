@@ -12,17 +12,16 @@ context Patient
 /// Report QA analysis with count of resources, no PHI.
 define ReportVitalSignsQA: 
 {
-  "All Vital Signs": Count("All Vital Signs"),
-  "Blood Pressure": Count("Blood Pressure"),
-  "Body Weight": Count("Body Weight"),
-  "Body Height": Count("Body Height"),
-  "BMI": Count("Body Mass Index"),
-  "Body Temperature": Count("Body Temperature"),
-  "Heart Rate": Count("Heart Rate"),
-  "Oxygen Saturation": Count("Oxygen Saturation"),
-  "Respiratory Rate": Count("Respiratory Rate"),
-
-  "Vital Signs Without Preferred Code": Count("Vital Signs Without Preferred Code")
+  "All Vital Signs Count": Count("All Vital Signs"),
+  "Blood Pressure Count": Count("Blood Pressure"),
+  "Body Weight Count": Count("Body Weight"),
+  "Body Height Count": Count("Body Height"),
+  "BMI Count": Count("Body Mass Index"),
+  "Body Temperature Count": Count("Body Temperature"),
+  "Heart Rate Count": Count("Heart Rate"),
+  "Oxygen Saturation Count": Count("Oxygen Saturation"),
+  "Respiratory Rate Count": Count("Respiratory Rate"),
+  "Vital Signs Without Preferred Code Count": Count("Vital Signs Without Preferred Code")
 }
 
 // Most recent FHIR Observation for each vital sign data element.

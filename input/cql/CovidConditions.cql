@@ -12,14 +12,14 @@ context Patient
 /// Report QA analysis with count of resources, no PHI.
 define ReportConditionsQA: 
 {
-  "All Conditions": Count(UE."All Conditions"),
-  "Active Problem List": Count(UE."Active Problem List Items"),
-  "Inactive Problem List": Count("Inactive Problem List"),
-  "Encounter Diagnoses": Count(UE."All Encounter Diagnoses"),
-  "Uncategorized Conditions": Count("Uncategorized Conditions"),
-  "Conditions Without Preferred Code": Count("Conditions Without Preferred Code"),
-  "Conditions With SNOMED Code": Count(UE."All Conditions".snomedCodes()),
-  "Conditions With ICD-10 Code": Count(UE."All Conditions".icd10Codes())
+  "All Conditions Count": Count(UE."All Conditions"),
+  "Active Problem List Count": Count(UE."Active Problem List Items"),
+  "Inactive Problem List Count": Count("Inactive Problem List"),
+  "Encounter Diagnoses Count": Count(UE."All Encounter Diagnoses"),
+  "Uncategorized Conditions Count": Count("Uncategorized Conditions"),
+  "Conditions Without Preferred Code Count": Count("Conditions Without Preferred Code"),
+  "Conditions With SNOMED Code Count": Count(UE."All Conditions".snomedCodes()),
+  "Conditions With ICD-10 Code Count": Count(UE."All Conditions".icd10Codes())
 }
 
 /// Report boolean values for input to ML model. Also list of codes for active problem list items.
