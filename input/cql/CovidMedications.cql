@@ -12,7 +12,7 @@ context Patient
 define ReportMedicationsQA: 
 {
   "MedicationRequest Count": Count("All Medication Requests"),
-  "Medications Without Preferred Code": Count("Medications Without Preferred Code")
+  "Medications Without Preferred Code Count": Count("Medications Without Preferred Code")
 }
 
 /// Report a list of codes for all procedures, using preferred coding system.
